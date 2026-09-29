@@ -17,13 +17,15 @@ The software evaluated in the paper is:
 - **AOMQTT v1.3.7**
 - Commit: `6dc0b2c497098aca569a636d1f8f8bb2adc4253a`
 
-Active development repository:
+The exact evaluated AOMQTT v1.3.7 source snapshot is included under `software/aomqtt-v1.3.7/`.
+
+Development repository reference:
 
 https://github.com/gawakou/aomqtt-client-sdk
 
 ## Repository contents
 
-- `software/`: evaluated software revision information
+- `software/`: evaluated software revision information and the frozen AOMQTT v1.3.7 source snapshot
 - `evaluation/source/e1/`: E1 replication runner, baseline helpers, and analyzer
 - `evaluation/source/e2/`: frozen E2 analysis programs
 - `results/e1/`: one-publisher / one-subscriber E1 replication archive

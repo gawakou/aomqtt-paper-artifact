@@ -1,0 +1,20 @@
+# AOMQTT v0.7 external policy example.
+# Keep topic_key/payload_key in examples/config.example.yaml and switch only
+# operation/privacy parameters here.
+policy:
+  id: p_whole_bucket_rotation
+  name: whole_bucket_rotation
+  token_mode: whole        # whole or hierarchical
+  qos: 1
+  retain: false
+  rotation:
+    enabled: true
+    interval_sec: 30
+    overlap_sec: 5
+  padding:
+    enabled: true
+    mode: bucket           # none, fixed, bucket, random
+    bucket_size: 256
+    fixed_size: 512
+    random_min_bytes: 0
+    random_max_bytes: 128

@@ -1,0 +1,30 @@
+# AOMQTT Client SDK v0.6 sample configuration.
+# Use sufficiently long random values in real experiments.
+topic_key: "replace-this-topic-key-32chars"
+payload_key: "replace-this-payload-key-32chars"
+topic_prefix: "aomqtt/v1"
+token_mode: "hierarchical"   # hierarchical or whole
+token_hex_len: 16
+payload_format: "json"
+mqtt_qos: 0
+retain: false
+key_id: "k001"
+aad_bind_topic: true
+
+# v0.3 token rotation
+rotation_enabled: false
+rotation_interval_sec: 300
+rotation_overlap_sec: 15
+
+# v0.6 payload padding
+# padding_mode:
+#   none   : no padding
+#   fixed  : pad encrypted plaintext to at least padding_fixed_size bytes
+#   bucket : round encrypted plaintext up to padding_bucket_size buckets
+#   random : add random bytes between padding_random_min_bytes and padding_random_max_bytes
+padding_enabled: false
+padding_mode: "none"
+padding_fixed_size: 512
+padding_bucket_size: 256
+padding_random_min_bytes: 0
+padding_random_max_bytes: 128

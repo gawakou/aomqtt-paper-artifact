@@ -1,0 +1,17 @@
+policy:
+  id: p_whole_no_padding_initial
+  name: whole_no_padding_initial
+  token_mode: whole
+  qos: 1
+  retain: false
+  rotation:
+    enabled: false
+    interval_sec: 30
+    overlap_sec: 5
+  padding:
+    enabled: false
+    mode: none
+    fixed_size: 512
+    bucket_size: 256
+    random_min_bytes: 0
+    random_max_bytes: 128

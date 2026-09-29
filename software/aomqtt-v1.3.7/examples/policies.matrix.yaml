@@ -1,0 +1,50 @@
+# AOMQTT v0.7 policy matrix example for experiments/run_policy_evaluation.py
+policies:
+  - id: p_whole_no_padding
+    name: whole_no_padding
+    token_mode: whole
+    qos: 1
+    rotation:
+      enabled: false
+    padding:
+      enabled: false
+      mode: none
+
+  - id: p_whole_bucket_rotation
+    name: whole_bucket_rotation
+    token_mode: whole
+    qos: 1
+    rotation:
+      enabled: true
+      interval_sec: 30
+      overlap_sec: 5
+    padding:
+      enabled: true
+      mode: bucket
+      bucket_size: 256
+
+  - id: p_hierarchical_bucket_rotation
+    name: hierarchical_bucket_rotation
+    token_mode: hierarchical
+    qos: 1
+    rotation:
+      enabled: true
+      interval_sec: 30
+      overlap_sec: 5
+    padding:
+      enabled: true
+      mode: bucket
+      bucket_size: 256
+
+  - id: p_whole_fixed_rotation
+    name: whole_fixed_rotation
+    token_mode: whole
+    qos: 1
+    rotation:
+      enabled: true
+      interval_sec: 30
+      overlap_sec: 5
+    padding:
+      enabled: true
+      mode: fixed
+      fixed_size: 512
