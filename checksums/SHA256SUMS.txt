@@ -7,7 +7,7 @@ fc8f981c06b12a2ef5de867ef3a475ae1053757f4f17d3e208f913b22f68a43a  ./evaluation/s
 137d28a3e44422162eb24bb1d79363cf2ec40441cf99eedbbcadacf4c03b688a  ./.gitignore
 e47654bf18bc69603599f4676a9a5beeb83ee92f33c4dee120f6f8ac8f236e4e  ./provenance/experiment-provenance.md
 bccf3ac964480cd0266e693381100cca6d10a74a2db2ae8cc905168cd6471c2f  ./provenance/software-revision.txt
-62b97d230c5fad38562b6b65552b1d45c98e54adaf7016a352989093fd18bc52  ./README.md
+4af616440f65af0faa5cc833814f81cbd1513f29371bf944f81196beb243291e  ./README.md
 9d06e5b0348a9098a692802c8ddf376b5be601e56c38dbc0ce82a99676df44b8  ./results/analysis/e2-full/ANALYSIS_FREEZE_NOTE.txt
 0856e2c9a6afad9591c14209355a799c2f7992efb4b7b3c701d9ae7a8f6f0eca  ./results/analysis/e2-full/analyze_e3_mc4_r01_r10.py
 84fcee18c764d8789f8c921e63981663107bbb7061746b9d89e1232758740afe  ./results/analysis/e2-full/dataset-ACCEPTED_TARS.sha256
@@ -35,6 +35,10 @@ cd8ebd35fc042508d134bc1a68ef87e63f22c9630443ce467a131d2bfad0f601  ./results/anal
 0edabcfdfe772b003d9d496bd83da61579d44f3bf65b6cd04f9f0ce34964d357  ./results/analysis/e2-plain/summary.txt
 8100dae73567adfbeee0cd29c027313ac8fb4707fe8f925d279f6531acf256e3  ./results/e1/e1-v137-replication-public.tar.gz
 533a2b3f325d0a35cedf746c9648e53c4b950d2f663dbbe5255f3164e1a9191e  ./results/e1/e1-v137-replication-public.tar.gz.sha256
+ef376884b4ed69ddc8bd7325332ef719cea70c6607a6f8b223df845b5745bf82  ./results/e1/summary/condition_summary.csv
+a66f030dc85d3a90b3e608c01e40294f38c3d4b6aa558a8a70fbb923bd73d2cf  ./results/e1/summary/README.md
+44faaa6b58d7af0dbfa306e3655de6397546b6e1b313245e818771204c40ce0d  ./results/e1/summary/run_summary.csv
+e4564247c983c17d4dc32c8b178e5892478f4fc5b5773152b294b501cdb04106  ./results/e1/summary/summary.txt
 33b2096a343dad9e639a424bd0b23ab410584cd519b6e29a87bc3c0ea72a7fca  ./results/e2/full/e3-mc4-aomqtt-fr-r01.tar.gz
 f6f75a85e17b70deba67771d0f67271724310707c9a31d735b7624b47d553e18  ./results/e2/full/e3-mc4-aomqtt-fr-r01.tar.gz.sha256
 26408771dc97c82e67986ac0fd197be269bc47455788fc5d5d1dafceb506cbee  ./results/e2/full/e3-mc4-aomqtt-fr-r02.tar.gz

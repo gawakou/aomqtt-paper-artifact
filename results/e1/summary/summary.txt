@@ -1,0 +1,33 @@
+B-8 E1 v1.3.7 replication summary
+A1: runs=5
+  logical_total=30000 physical_total=30000 extra_total=0
+  subscriber_duplicates_total=0 decrypt_failures_total=0
+  latency_mean_ms=0.338842 sd=0.018266
+  p95_mean_ms=0.514896 p99_mean_ms=0.560429
+  payload_physical_mean_B=75.361
+  payload_per_logical_B=75.361
+  extra_rate_pct=0.0000
+A2: runs=5
+  logical_total=30000 physical_total=30000 extra_total=0
+  subscriber_duplicates_total=0 decrypt_failures_total=0
+  latency_mean_ms=0.455549 sd=0.056113
+  p95_mean_ms=0.657992 p99_mean_ms=0.711973
+  payload_physical_mean_B=275.317
+  payload_per_logical_B=275.317
+  extra_rate_pct=0.0000
+A3: runs=5
+  logical_total=30000 physical_total=30000 extra_total=0
+  subscriber_duplicates_total=0 decrypt_failures_total=0
+  latency_mean_ms=0.474415 sd=0.055116
+  p95_mean_ms=0.678225 p99_mean_ms=0.745776
+  payload_physical_mean_B=802.000
+  payload_per_logical_B=802.000
+  extra_rate_pct=0.0000
+A4: runs=5
+  logical_total=30000 physical_total=34487 extra_total=4487
+  subscriber_duplicates_total=3890 decrypt_failures_total=0
+  latency_mean_ms=0.472565 sd=0.066918
+  p95_mean_ms=0.693283 p99_mean_ms=0.856462
+  payload_physical_mean_B=802.000
+  payload_per_logical_B=921.952
+  extra_rate_pct=14.9567

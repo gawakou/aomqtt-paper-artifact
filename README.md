@@ -27,6 +27,7 @@ https://github.com/gawakou/aomqtt-client-sdk
 - `evaluation/source/e1/`: E1 replication runner, baseline helpers, and analyzer
 - `evaluation/source/e2/`: frozen E2 analysis programs
 - `results/e1/`: one-publisher / one-subscriber E1 replication archive
+- `results/e1/summary/`: directly viewable E1 per-run and per-condition summary tables
 - `results/e2/full/`: ten accepted Full AOMQTT E2 run archives
 - `results/e2/plain/`: ten accepted Plain MQTT E2 run archives
 - `results/analysis/e2-full/`: frozen Full AOMQTT aggregate analysis
