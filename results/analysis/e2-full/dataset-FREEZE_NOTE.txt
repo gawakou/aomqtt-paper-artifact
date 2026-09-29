@@ -1,0 +1,19 @@
+MC4 Full AOMQTT formal accepted dataset
+
+accepted_runs=r01-r10
+accepted_run_count=10
+topology=5_publishers_x_5_subscribers
+logical_rate_per_publisher_msg_per_s=100
+logical_total_rate_msg_per_s=500
+logical_messages_per_publisher=6000
+logical_messages_per_run=30000
+expected_unique_observations_per_subscriber=30000
+expected_unique_observations_all_subscribers=150000
+qos=1
+rotation_interval_s=30
+overlap_s=5
+fixed_padding_bytes=512
+formal_runner=run_e3_mc4_aomqtt.formal.v2.sh
+
+Rejected diagnostic/warm-up runs are excluded from this accepted set.
+No accepted archive contents were modified by this freeze step.

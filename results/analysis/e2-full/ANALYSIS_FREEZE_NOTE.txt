@@ -1,0 +1,37 @@
+E3-MC4 Full AOMQTT formal analysis freeze
+
+accepted_runs=r01-r10
+accepted_run_count=10
+topology=5_publishers_x_5_subscribers
+
+published_logical_messages=300000
+expected_unique_subscriber_observations=1500000
+observed_unique_subscriber_observations=1500000
+
+decrypt_failures=0
+missing_logical_observations=0
+unexpected_logical_observations=0
+pacing_deadline_misses=0
+
+publisher_physical_rows=350000
+publisher_redundant_rows=50000
+
+redundant_observation_opportunities=250000
+observed_subscriber_duplicates=227395
+unobserved_redundant_observations=22605
+
+analyzer=analyze_e3_mc4_r01_r10.py
+analyzer_sha256=0856e2c9a6afad9591c14209355a799c2f7992efb4b7b3c701d9ae7a8f6f0eca
+
+Subscriber latency is based on decrypt-success, duplicate=False rows.
+Resource window uses:
+logical_start < sample_timestamp <= logical_end + 1.0 s
+
+150000 unique subscriber observations per run means:
+30000 published logical messages x 5 subscribers.
+It does not mean 150000 published messages.
+
+Unobserved redundant copies are not logical-message loss when
+logical delivery is complete.
+
+This freeze does not modify the accepted measurement archives.

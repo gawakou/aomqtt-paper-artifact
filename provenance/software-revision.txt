@@ -1,0 +1,4 @@
+AOMQTT version: v1.3.7
+Git commit: 6dc0b2c497098aca569a636d1f8f8bb2adc4253a
+E1: one publisher / one subscriber feature-level replication
+E2: five publishers / five subscribers, Plain MQTT vs Full AOMQTT

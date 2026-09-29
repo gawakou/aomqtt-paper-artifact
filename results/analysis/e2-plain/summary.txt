@@ -1,0 +1,50 @@
+E3-MC4 Plain MQTT r01-r10 aggregate summary
+
+runs: 10
+topology: 5 publishers x 5 subscribers
+published logical messages: 300000
+unique subscriber observations: 1500000/1500000
+subscriber unique observation rate: 1.000000000
+parse errors: 0
+missing logical observations: 0
+unexpected logical observations: 0
+total pacing deadline misses: 0
+publisher physical MQTT rows: 300000
+publisher redundant rows: 0
+subscriber raw rows: 1500000
+subscriber duplicates: 0
+
+Run-level statistics (n=10; 95% CI uses Student t, df=9)
+effective_rate_total_msg_s: mean=499.999255057, sd=0.000082935, median=499.999266265, min=499.999158562, max=499.999384301, 95%CI=[499.999195729, 499.999314385]
+effective_rate_mean_per_publisher_msg_s: mean=99.999851011, sd=0.000016587, median=99.999853253, min=99.999831712, max=99.999876860, 95%CI=[99.999839146, 99.999862877]
+publisher_first_metric_timestamp_spread_ms: mean=8.086895943, sd=12.287520152, median=4.349470139, min=1.473426819, max=42.646646500, 95%CI=[-0.703066455, 16.876858340]
+publisher_complete_mean_ms: mean=0.371835427, sd=0.024965572, median=0.369585084, min=0.339107671, max=0.412344620, 95%CI=[0.353976133, 0.389694721]
+publisher_complete_p95_ms: mean=0.558713274, sd=0.049591487, median=0.563329176, min=0.484233943, max=0.644739042, 95%CI=[0.523237662, 0.594188887]
+latency_mean_ms: mean=0.340604671, sd=0.035787067, median=0.322462631, min=0.310267825, max=0.414481459, 95%CI=[0.315004145, 0.366205197]
+latency_p95_ms: mean=0.571465492, sd=0.064192473, median=0.558972359, min=0.510931015, max=0.710964203, 95%CI=[0.525544964, 0.617386021]
+latency_p99_ms: mean=0.694132566, sd=0.075241844, median=0.667214394, min=0.630140305, max=0.860214233, 95%CI=[0.640307794, 0.747957339]
+latency_max_ms: mean=13.437747955, sd=9.905446745, median=8.620977402, min=1.931905746, max=33.927202225, 95%CI=[6.351818220, 20.523677691]
+subscriber_duplicates: mean=0.000000000, sd=0.000000000, median=0.000000000, min=0.000000000, max=0.000000000, 95%CI=[0.000000000, 0.000000000]
+payload_bytes_per_logical: mean=130.194686667, sd=0.005345015, median=130.195266667, min=130.181500000, max=130.200133333, 95%CI=[130.190863073, 130.198510260]
+broker_cpu_mean_one_core_pct: mean=7.237706851, sd=0.518596082, median=7.073770262, min=6.672128721, max=8.196717492, 95%CI=[6.866725562, 7.608688139]
+broker_cpu_p95_one_core_pct: mean=9.400038200, sd=1.577689694, median=8.999773000, min=7.999631000, max=12.000163000, 95%CI=[8.271426982, 10.528649418]
+broker_cpu_max_one_core_pct: mean=9.800169100, sd=1.813316073, median=9.000532000, min=8.000137000, max=13.000170000, 95%CI=[8.503000924, 11.097337276]
+broker_rss_mean_kib: mean=8320.000000000, sd=0.000000000, median=8320.000000000, min=8320.000000000, max=8320.000000000, 95%CI=[8320.000000000, 8320.000000000]
+broker_rss_max_kib: mean=8320.000000000, sd=0.000000000, median=8320.000000000, min=8320.000000000, max=8320.000000000, 95%CI=[8320.000000000, 8320.000000000]
+publisher_cpu_sum_mean_one_core_pct: mean=15.250832677, sd=0.717994073, median=15.000017402, min=14.360680475, max=16.491831787, 95%CI=[14.737210658, 15.764454696]
+publisher_cpu_mean_per_client_one_core_pct: mean=3.050166535, sd=0.143598815, median=3.000003480, min=2.872136095, max=3.298366357, 95%CI=[2.947442132, 3.152890939]
+publisher_rss_sum_mean_kib: mean=128879.003278689, sd=142.765478017, median=128919.081967213, min=128644.196721311, max=129026.098360656, 95%CI=[128776.875008058, 128981.131549320]
+publisher_rss_mean_per_client_kib: mean=25775.800655738, sd=28.553095603, median=25783.816393443, min=25728.839344262, max=25805.219672131, 95%CI=[25755.375001612, 25796.226309864]
+subscriber_cpu_sum_mean_one_core_pct: mean=38.596282405, sd=2.002117074, median=38.926220861, min=35.114756180, max=41.508180656, 95%CI=[37.164054130, 40.028510680]
+subscriber_cpu_mean_per_client_one_core_pct: mean=7.719256481, sd=0.400423415, median=7.785244172, min=7.022951236, max=8.301636131, 95%CI=[7.432810826, 8.005702136]
+subscriber_rss_sum_mean_kib: mean=135464.533474352, sd=173.636185209, median=135457.913273400, min=135129.573770492, max=135670.032786885, 95%CI=[135340.321630139, 135588.745318565]
+subscriber_rss_mean_per_client_kib: mean=27092.906694870, sd=34.727237042, median=27091.582654680, min=27025.914754098, max=27134.006557377, 95%CI=[27068.064326028, 27117.749063713]
+
+Method notes
+- Subscriber latency uses parse_error=False, duplicate=False rows only (one observation per logical message per subscriber).
+- Across five subscribers, 150,000 unique observations per run correspond to 30,000 published logical messages x 5 subscribers; they are not 150,000 published messages.
+- Resource window uses the frozen MC2-compatible legacy rule: logical_start < sample_timestamp <= logical_end + 1.0 s.
+- publisher_complete_* is based on physical publish_complete_ms rows and is not an end-to-end security-processing metric.
+- payload_bytes_* is Plain MQTT application payload size, not total MQTT/TCP/IP traffic.
+- Plain MQTT has one physical publish per logical message; subscriber duplicates are required to be zero.
+- Run-level subscriber CPU/RSS totals are sums of the five per-subscriber mean values over the frozen logical resource window; per-client values divide those sums by five.

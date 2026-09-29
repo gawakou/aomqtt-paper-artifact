@@ -1,0 +1,29 @@
+Dataset: MC4 Plain MQTT formal accepted trials r01-r10
+Topology: 5 publishers x 5 subscribers
+Published logical messages per run: 30000
+Expected unique subscriber observations per run: 150000
+Accepted formal trials: 10
+
+Input dataset freeze:
+e3-mc4-plain-formal-r01-r10-freeze
+
+Formal analyzer:
+analyze_e3_mc4_plain_r01_r10.py
+
+Formal analyzer SHA256:
+fc8f981c06b12a2ef5de867ef3a475ae1053757f4f17d3e208f913b22f68a43a
+
+Frozen analysis artifacts:
+per-run.csv
+per-publisher.csv
+per-subscriber.csv
+summary-statistics.csv
+summary.txt
+
+Analysis semantics:
+- Plain MQTT: one physical publish per logical message.
+- Subscriber duplicates required to be zero.
+- Subscriber latency uses parse_error=False and duplicate=False rows.
+- Resource window: logical_start < sample_timestamp <= logical_end + 1.0 s.
+- Five subscriber CPU/RSS means are summed for run-level totals.
+- Per-client subscriber CPU/RSS equals the run-level sum divided by five.
