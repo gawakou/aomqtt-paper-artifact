@@ -1,0 +1,129 @@
+{
+  "schema": "aomqtt-e5-closed-loop-v1",
+  "scope": "single-step functional closed-loop demonstration; local publisher and subscriber processes; live MQTT broker",
+  "run_id": "e5-20260930T062834Z",
+  "broker": "172.16.10.200:1883",
+  "paper_artifact_git_head": "d6efc44ac2916e544b3f9dc3631eb1c6937ebd08",
+  "paper_artifact_git_status_short": "M README.md\n?? evaluation/source/e4/\n?? evaluation/source/e5/\n?? provenance/e4-provenance.md\n?? results/analysis/e3-privacy-b3-ablation-v2/\n?? results/analysis/e3-privacy-b3-ablation/\n?? results/analysis/e4-policy-guard/\n?? results/analysis/policy-guard-micro/\n?? results/e5/",
+  "python": "3.12.3",
+  "initial_policy_id": "e5_overlap5_fixed512",
+  "generated_policy_id": "e5_overlap5_fixed512_auto_s2",
+  "initial_overlap_sec": 5,
+  "generated_overlap_sec": 0,
+  "controller_decision": {
+    "action": "decrease_overlap",
+    "reason": "duplicate_rate is above threshold: 0.11764705882352941 > 0.1",
+    "changes": {
+      "rotation.overlap_sec": "-5"
+    }
+  },
+  "controller_metrics": {
+    "avg_publish_complete_ms": 0.42681454215198755,
+    "avg_delivery_latency_ms": 0.6644141440298043,
+    "loss_rate": 0.0,
+    "duplicate_rate": 0.11764705882352941,
+    "decrypt_success_rate": 1.0,
+    "avg_payload_total_overhead_bytes": 679.1619047619048,
+    "reconnect_count": 0,
+    "publisher_rows": 105,
+    "subscriber_rows": 102
+  },
+  "tracker_summary": "Policy deployment status\npolicy_id: e5_overlap5_fixed512_auto_s2\nsequence_no: 2\n\nclient_id            role         ACK        STATUS     reason_code        reason\n------------------------------------------------------------------------------------------------\ne5-pub-T062834Z      publisher    accepted   applied    -                  -\ne5-sub-T062834Z      subscriber   accepted   applied    -                  -",
+  "timing": {
+    "run_started_wall": 1790749714.6456027,
+    "pre_start_wall": 1790749716.781406,
+    "pre_end_wall": 1790749806.7822485,
+    "controller_started_wall": 1790749806.8491325,
+    "controller_finished_wall": 1790749810.6467364,
+    "post_start_wall": 1790749815.665994,
+    "post_end_wall": 1790749905.6662269,
+    "pre_seconds_requested": 90.0,
+    "post_seconds_requested": 90.0,
+    "settle_seconds": 5.0
+  },
+  "pre": {
+    "publisher_rows": 105,
+    "subscriber_rows": 102,
+    "published_logical_messages": 90,
+    "unique_received_messages": 90,
+    "lost_messages": 0,
+    "loss_rate": 0.0,
+    "duplicate_message_ids": 12,
+    "duplicate_extra_rows": 12,
+    "duplicate_rate_per_received_row": 0.11764705882352941,
+    "duplicate_rate_per_unique_received": 0.13333333333333333,
+    "physical_publish_rows_per_logical_message": 1.1666666666666667,
+    "decrypt_success_rate": 1.0,
+    "avg_delivery_latency_ms": 0.6644141440298043,
+    "publisher_policy_ids": [
+      "e5_overlap5_fixed512"
+    ],
+    "subscriber_policy_ids": [
+      "e5_overlap5_fixed512"
+    ],
+    "lost_ids": [],
+    "duplicate_ids": [
+      "e5-pub-T062834Z:e5-20260930T062834Z:24",
+      "e5-pub-T062834Z:e5-20260930T062834Z:25",
+      "e5-pub-T062834Z:e5-20260930T062834Z:26",
+      "e5-pub-T062834Z:e5-20260930T062834Z:27",
+      "e5-pub-T062834Z:e5-20260930T062834Z:54",
+      "e5-pub-T062834Z:e5-20260930T062834Z:55",
+      "e5-pub-T062834Z:e5-20260930T062834Z:56",
+      "e5-pub-T062834Z:e5-20260930T062834Z:57",
+      "e5-pub-T062834Z:e5-20260930T062834Z:84",
+      "e5-pub-T062834Z:e5-20260930T062834Z:85",
+      "e5-pub-T062834Z:e5-20260930T062834Z:86",
+      "e5-pub-T062834Z:e5-20260930T062834Z:87"
+    ]
+  },
+  "post": {
+    "publisher_rows": 90,
+    "subscriber_rows": 87,
+    "published_logical_messages": 90,
+    "unique_received_messages": 87,
+    "lost_messages": 3,
+    "loss_rate": 0.03333333333333333,
+    "duplicate_message_ids": 0,
+    "duplicate_extra_rows": 0,
+    "duplicate_rate_per_received_row": 0.0,
+    "duplicate_rate_per_unique_received": 0.0,
+    "physical_publish_rows_per_logical_message": 1.0,
+    "decrypt_success_rate": 1.0,
+    "avg_delivery_latency_ms": 0.5920316981173109,
+    "publisher_policy_ids": [
+      "e5_overlap5_fixed512_auto_s2"
+    ],
+    "subscriber_policy_ids": [
+      "e5_overlap5_fixed512_auto_s2"
+    ],
+    "lost_ids": [
+      "e5-pub-T062834Z:e5-20260930T062834Z:113",
+      "e5-pub-T062834Z:e5-20260930T062834Z:143",
+      "e5-pub-T062834Z:e5-20260930T062834Z:173"
+    ],
+    "duplicate_ids": []
+  },
+  "gates": {
+    "pre_duplicate_rate_gt_0_10": true,
+    "controller_action_decrease_overlap": true,
+    "generated_overlap_zero": true,
+    "publisher_ack_applied": true,
+    "subscriber_ack_applied": true,
+    "post_generated_policy_publisher": true,
+    "post_generated_policy_subscriber": true,
+    "post_duplicate_rate_lower": true,
+    "post_duplicate_rate_zero": true,
+    "post_loss_zero": false,
+    "post_decrypt_success_one": true
+  },
+  "formal_pass": false,
+  "artifacts": {
+    "publisher_metrics_sha256": "ba0f7413f7c590cae06528ab05057ed4e64002e81b231f667c81963a650db1b2",
+    "subscriber_metrics_sha256": "098251b57fa232d1fdf3bc0a406c86533afae4b01138c4cdcc527e4f558a93ab",
+    "pre_publisher_snapshot_sha256": "fb42488feb5afb7e37283ff85ceb2cc196a5cd5391b5e6ac600fe50fed92dc11",
+    "pre_subscriber_snapshot_sha256": "d9d54cd5063ef0186578297920ae64a1c5d5ca764279ebc3992f7acf96efe22f",
+    "generated_policy_sha256": "6242a1f45b6315caf84badba5f23311d7299a6a7eed201753440badcfacc3a25",
+    "public_signing_key_sha256": "c8d265988ab087df0a2c2089ab3239c08833c2f974d04e02e70c450ddbc78efa"
+  }
+}

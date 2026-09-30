@@ -1,0 +1,608 @@
+policy id:                  e5_overlap5_fixed512
+policy name:                e5_overlap5_fixed512
+token mode:                 whole
+rotation enabled:           True
+policy file:                /home/ogawa/aomqtt-paper-artifact/evaluation/source/e5/e5_initial_policy.yaml
+rotation interval:          30s
+rotation overlap:           5s
+current epoch:              59691761
+plaintext subscribe filter: e5/siteA/closedloop
+token subscribe filter:     aomqtt/v1/t/c6f3017c9b552df9
+experiment id:              aomqtt-e5-closed-loop
+run id:                     e5-20260930T072057Z
+delivery csv:               /home/ogawa/aomqtt-paper-artifact/results/e5/e5-20260930T072057Z/raw/subscriber_metrics.csv
+experiment config:          /home/ogawa/aomqtt-paper-artifact/results/e5/e5-20260930T072057Z/raw/subscriber_experiment_config.json
+control topic:              aomqtt/control/e5-T072057Z/policy
+control group id:           e5-T072057Z
+received
+  token_topic: aomqtt/v1/t/c6f3017c9b552df9
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:0", "seq": 0, "metric": "rtt", "value": 42.1, "timestamp": 1790752860.1607473}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:1", "seq": 1, "metric": "rtt", "value": 43.1, "timestamp": 1790752861.160869}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:2", "seq": 2, "metric": "rtt", "value": 44.1, "timestamp": 1790752862.1608806}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:3", "seq": 3, "metric": "rtt", "value": 45.1, "timestamp": 1790752863.1608646}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:4", "seq": 4, "metric": "rtt", "value": 46.1, "timestamp": 1790752864.1608818}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:5", "seq": 5, "metric": "rtt", "value": 47.1, "timestamp": 1790752865.160879}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:6", "seq": 6, "metric": "rtt", "value": 48.1, "timestamp": 1790752866.1608713}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:7", "seq": 7, "metric": "rtt", "value": 49.1, "timestamp": 1790752867.1608646}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:8", "seq": 8, "metric": "rtt", "value": 50.1, "timestamp": 1790752868.1608825}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:9", "seq": 9, "metric": "rtt", "value": 51.1, "timestamp": 1790752869.1608644}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:10", "seq": 10, "metric": "rtt", "value": 52.1, "timestamp": 1790752870.1608582}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:11", "seq": 11, "metric": "rtt", "value": 53.1, "timestamp": 1790752871.1608615}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:12", "seq": 12, "metric": "rtt", "value": 54.1, "timestamp": 1790752872.1608622}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:13", "seq": 13, "metric": "rtt", "value": 55.1, "timestamp": 1790752873.1608567}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:14", "seq": 14, "metric": "rtt", "value": 56.1, "timestamp": 1790752874.1608827}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:15", "seq": 15, "metric": "rtt", "value": 57.1, "timestamp": 1790752875.1608806}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:16", "seq": 16, "metric": "rtt", "value": 58.1, "timestamp": 1790752876.1608713}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:17", "seq": 17, "metric": "rtt", "value": 59.1, "timestamp": 1790752877.160871}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:18", "seq": 18, "metric": "rtt", "value": 60.1, "timestamp": 1790752878.1608546}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:19", "seq": 19, "metric": "rtt", "value": 61.1, "timestamp": 1790752879.16086}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:20", "seq": 20, "metric": "rtt", "value": 62.1, "timestamp": 1790752880.1608737}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:21", "seq": 21, "metric": "rtt", "value": 63.1, "timestamp": 1790752881.1608315}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:22", "seq": 22, "metric": "rtt", "value": 64.1, "timestamp": 1790752882.1608264}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:23", "seq": 23, "metric": "rtt", "value": 65.1, "timestamp": 1790752883.1608243}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:24", "seq": 24, "metric": "rtt", "value": 66.1, "timestamp": 1790752884.1608946}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:25", "seq": 25, "metric": "rtt", "value": 67.1, "timestamp": 1790752885.160906}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:26", "seq": 26, "metric": "rtt", "value": 68.1, "timestamp": 1790752886.1608894}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:27", "seq": 27, "metric": "rtt", "value": 69.1, "timestamp": 1790752887.16083}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:28", "seq": 28, "metric": "rtt", "value": 70.1, "timestamp": 1790752888.1608655}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:29", "seq": 29, "metric": "rtt", "value": 71.1, "timestamp": 1790752889.1608932}
+received
+  token_topic: aomqtt/v1/t/6c9583b93e155b0e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:30", "seq": 30, "metric": "rtt", "value": 72.1, "timestamp": 1790752890.1608994}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:31", "seq": 31, "metric": "rtt", "value": 73.1, "timestamp": 1790752891.1608713}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:32", "seq": 32, "metric": "rtt", "value": 74.1, "timestamp": 1790752892.1608627}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:33", "seq": 33, "metric": "rtt", "value": 75.1, "timestamp": 1790752893.1608574}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:34", "seq": 34, "metric": "rtt", "value": 76.1, "timestamp": 1790752894.1608868}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:35", "seq": 35, "metric": "rtt", "value": 77.1, "timestamp": 1790752895.1608832}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:36", "seq": 36, "metric": "rtt", "value": 78.1, "timestamp": 1790752896.1608856}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:37", "seq": 37, "metric": "rtt", "value": 79.1, "timestamp": 1790752897.1608937}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:38", "seq": 38, "metric": "rtt", "value": 80.1, "timestamp": 1790752898.1608799}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:39", "seq": 39, "metric": "rtt", "value": 81.1, "timestamp": 1790752899.16086}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:40", "seq": 40, "metric": "rtt", "value": 82.1, "timestamp": 1790752900.1608999}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:41", "seq": 41, "metric": "rtt", "value": 83.1, "timestamp": 1790752901.160886}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:42", "seq": 42, "metric": "rtt", "value": 84.1, "timestamp": 1790752902.160875}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:43", "seq": 43, "metric": "rtt", "value": 85.1, "timestamp": 1790752903.1608696}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:44", "seq": 44, "metric": "rtt", "value": 86.1, "timestamp": 1790752904.1608636}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:45", "seq": 45, "metric": "rtt", "value": 87.1, "timestamp": 1790752905.160898}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:46", "seq": 46, "metric": "rtt", "value": 88.1, "timestamp": 1790752906.1608982}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:47", "seq": 47, "metric": "rtt", "value": 89.1, "timestamp": 1790752907.1608334}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:48", "seq": 48, "metric": "rtt", "value": 90.1, "timestamp": 1790752908.1608818}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:49", "seq": 49, "metric": "rtt", "value": 91.1, "timestamp": 1790752909.1608717}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:50", "seq": 50, "metric": "rtt", "value": 92.1, "timestamp": 1790752910.1608808}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:51", "seq": 51, "metric": "rtt", "value": 93.1, "timestamp": 1790752911.1608772}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:52", "seq": 52, "metric": "rtt", "value": 94.1, "timestamp": 1790752912.160821}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:53", "seq": 53, "metric": "rtt", "value": 95.1, "timestamp": 1790752913.1608286}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:54", "seq": 54, "metric": "rtt", "value": 96.1, "timestamp": 1790752914.1608684}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:55", "seq": 55, "metric": "rtt", "value": 97.1, "timestamp": 1790752915.1608946}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:56", "seq": 56, "metric": "rtt", "value": 98.1, "timestamp": 1790752916.1608956}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:57", "seq": 57, "metric": "rtt", "value": 99.1, "timestamp": 1790752917.1608794}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:58", "seq": 58, "metric": "rtt", "value": 100.1, "timestamp": 1790752918.1608868}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:59", "seq": 59, "metric": "rtt", "value": 101.1, "timestamp": 1790752919.1608756}
+received
+  token_topic: aomqtt/v1/t/9ccd4771b9ae6090
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:60", "seq": 60, "metric": "rtt", "value": 102.1, "timestamp": 1790752920.1608994}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:61", "seq": 61, "metric": "rtt", "value": 103.1, "timestamp": 1790752921.1608877}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:62", "seq": 62, "metric": "rtt", "value": 104.1, "timestamp": 1790752922.160872}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:63", "seq": 63, "metric": "rtt", "value": 105.1, "timestamp": 1790752923.1608696}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:64", "seq": 64, "metric": "rtt", "value": 106.1, "timestamp": 1790752924.1608784}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:65", "seq": 65, "metric": "rtt", "value": 107.1, "timestamp": 1790752925.1608803}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:66", "seq": 66, "metric": "rtt", "value": 108.1, "timestamp": 1790752926.160887}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:67", "seq": 67, "metric": "rtt", "value": 109.1, "timestamp": 1790752927.160866}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:68", "seq": 68, "metric": "rtt", "value": 110.1, "timestamp": 1790752928.1608732}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:69", "seq": 69, "metric": "rtt", "value": 111.1, "timestamp": 1790752929.160869}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:70", "seq": 70, "metric": "rtt", "value": 112.1, "timestamp": 1790752930.1608706}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:71", "seq": 71, "metric": "rtt", "value": 113.1, "timestamp": 1790752931.160874}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:72", "seq": 72, "metric": "rtt", "value": 114.1, "timestamp": 1790752932.1608868}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:73", "seq": 73, "metric": "rtt", "value": 115.1, "timestamp": 1790752933.160829}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:74", "seq": 74, "metric": "rtt", "value": 116.1, "timestamp": 1790752934.1608753}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:75", "seq": 75, "metric": "rtt", "value": 117.1, "timestamp": 1790752935.160872}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:76", "seq": 76, "metric": "rtt", "value": 118.1, "timestamp": 1790752936.1608765}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:77", "seq": 77, "metric": "rtt", "value": 119.1, "timestamp": 1790752937.16088}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:78", "seq": 78, "metric": "rtt", "value": 120.1, "timestamp": 1790752938.1608279}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:79", "seq": 79, "metric": "rtt", "value": 121.1, "timestamp": 1790752939.1608648}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:80", "seq": 80, "metric": "rtt", "value": 122.1, "timestamp": 1790752940.1608686}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:81", "seq": 81, "metric": "rtt", "value": 123.1, "timestamp": 1790752941.1608677}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:82", "seq": 82, "metric": "rtt", "value": 124.1, "timestamp": 1790752942.1608646}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:83", "seq": 83, "metric": "rtt", "value": 125.1, "timestamp": 1790752943.160867}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:84", "seq": 84, "metric": "rtt", "value": 126.1, "timestamp": 1790752944.1608548}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:85", "seq": 85, "metric": "rtt", "value": 127.1, "timestamp": 1790752945.160874}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:86", "seq": 86, "metric": "rtt", "value": 128.1, "timestamp": 1790752946.1608799}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:87", "seq": 87, "metric": "rtt", "value": 129.1, "timestamp": 1790752947.1608746}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:88", "seq": 88, "metric": "rtt", "value": 130.1, "timestamp": 1790752948.1608312}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:89", "seq": 89, "metric": "rtt", "value": 131.1, "timestamp": 1790752949.160873}
+received
+  token_topic: aomqtt/v1/t/e000285b0488871c
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:90", "seq": 90, "metric": "rtt", "value": 132.1, "timestamp": 1790752950.1608424}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:91", "seq": 91, "metric": "rtt", "value": 133.1, "timestamp": 1790752951.1608622}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:92", "seq": 92, "metric": "rtt", "value": 134.1, "timestamp": 1790752952.16088}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:93", "seq": 93, "metric": "rtt", "value": 135.1, "timestamp": 1790752953.1608667}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:94", "seq": 94, "metric": "rtt", "value": 136.1, "timestamp": 1790752954.160882}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:95", "seq": 95, "metric": "rtt", "value": 137.1, "timestamp": 1790752955.1608682}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:96", "seq": 96, "metric": "rtt", "value": 138.1, "timestamp": 1790752956.1608582}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:97", "seq": 97, "metric": "rtt", "value": 139.1, "timestamp": 1790752957.16088}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:98", "seq": 98, "metric": "rtt", "value": 140.1, "timestamp": 1790752958.1608768}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:99", "seq": 99, "metric": "rtt", "value": 141.1, "timestamp": 1790752959.1608696}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:100", "seq": 100, "metric": "rtt", "value": 142.1, "timestamp": 1790752960.160866}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:101", "seq": 101, "metric": "rtt", "value": 143.1, "timestamp": 1790752961.1608617}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:102", "seq": 102, "metric": "rtt", "value": 144.1, "timestamp": 1790752962.1608863}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:103", "seq": 103, "metric": "rtt", "value": 145.1, "timestamp": 1790752963.160877}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:104", "seq": 104, "metric": "rtt", "value": 146.1, "timestamp": 1790752964.160898}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:105", "seq": 105, "metric": "rtt", "value": 147.1, "timestamp": 1790752965.1608782}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:106", "seq": 106, "metric": "rtt", "value": 148.1, "timestamp": 1790752966.160869}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:107", "seq": 107, "metric": "rtt", "value": 149.1, "timestamp": 1790752967.1608696}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:108", "seq": 108, "metric": "rtt", "value": 150.1, "timestamp": 1790752968.1608775}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:109", "seq": 109, "metric": "rtt", "value": 151.1, "timestamp": 1790752969.1608775}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:110", "seq": 110, "metric": "rtt", "value": 152.1, "timestamp": 1790752970.1608727}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:111", "seq": 111, "metric": "rtt", "value": 153.1, "timestamp": 1790752971.1608646}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:112", "seq": 112, "metric": "rtt", "value": 154.1, "timestamp": 1790752972.1608891}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:113", "seq": 113, "metric": "rtt", "value": 155.1, "timestamp": 1790752973.1608355}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:114", "seq": 114, "metric": "rtt", "value": 156.1, "timestamp": 1790752974.1609237}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:115", "seq": 115, "metric": "rtt", "value": 157.1, "timestamp": 1790752975.1608994}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:116", "seq": 116, "metric": "rtt", "value": 158.1, "timestamp": 1790752976.1608686}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:117", "seq": 117, "metric": "rtt", "value": 159.1, "timestamp": 1790752977.1608562}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:118", "seq": 118, "metric": "rtt", "value": 160.1, "timestamp": 1790752978.1608868}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:119", "seq": 119, "metric": "rtt", "value": 161.1, "timestamp": 1790752979.160877}
+received
+  token_topic: aomqtt/v1/t/b689b44a4f0ec40e
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:120", "seq": 120, "metric": "rtt", "value": 162.1, "timestamp": 1790752980.1608732}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:121", "seq": 121, "metric": "rtt", "value": 163.1, "timestamp": 1790752981.1608691}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:122", "seq": 122, "metric": "rtt", "value": 164.1, "timestamp": 1790752982.1608672}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:123", "seq": 123, "metric": "rtt", "value": 165.1, "timestamp": 1790752983.1608593}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:124", "seq": 124, "metric": "rtt", "value": 166.1, "timestamp": 1790752984.160848}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:125", "seq": 125, "metric": "rtt", "value": 167.1, "timestamp": 1790752985.1608741}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:126", "seq": 126, "metric": "rtt", "value": 168.1, "timestamp": 1790752986.1608741}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:127", "seq": 127, "metric": "rtt", "value": 169.1, "timestamp": 1790752987.1608617}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:128", "seq": 128, "metric": "rtt", "value": 170.1, "timestamp": 1790752988.16095}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:129", "seq": 129, "metric": "rtt", "value": 171.1, "timestamp": 1790752989.1608794}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:130", "seq": 130, "metric": "rtt", "value": 172.1, "timestamp": 1790752990.1608384}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:131", "seq": 131, "metric": "rtt", "value": 173.1, "timestamp": 1790752991.1608646}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:132", "seq": 132, "metric": "rtt", "value": 174.1, "timestamp": 1790752992.160862}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:133", "seq": 133, "metric": "rtt", "value": 175.1, "timestamp": 1790752993.1608758}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:134", "seq": 134, "metric": "rtt", "value": 176.1, "timestamp": 1790752994.1608768}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:135", "seq": 135, "metric": "rtt", "value": 177.1, "timestamp": 1790752995.160871}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:136", "seq": 136, "metric": "rtt", "value": 178.1, "timestamp": 1790752996.1608684}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:137", "seq": 137, "metric": "rtt", "value": 179.1, "timestamp": 1790752997.1608603}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:138", "seq": 138, "metric": "rtt", "value": 180.1, "timestamp": 1790752998.1608682}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:139", "seq": 139, "metric": "rtt", "value": 181.1, "timestamp": 1790752999.1608684}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:140", "seq": 140, "metric": "rtt", "value": 182.1, "timestamp": 1790753000.160861}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:141", "seq": 141, "metric": "rtt", "value": 183.1, "timestamp": 1790753001.1608667}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:142", "seq": 142, "metric": "rtt", "value": 184.1, "timestamp": 1790753002.1608794}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:143", "seq": 143, "metric": "rtt", "value": 185.1, "timestamp": 1790753003.1608982}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:144", "seq": 144, "metric": "rtt", "value": 186.1, "timestamp": 1790753004.160882}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:145", "seq": 145, "metric": "rtt", "value": 187.1, "timestamp": 1790753005.160891}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:146", "seq": 146, "metric": "rtt", "value": 188.1, "timestamp": 1790753006.1608737}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:147", "seq": 147, "metric": "rtt", "value": 189.1, "timestamp": 1790753007.160872}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:148", "seq": 148, "metric": "rtt", "value": 190.1, "timestamp": 1790753008.160877}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:149", "seq": 149, "metric": "rtt", "value": 191.1, "timestamp": 1790753009.160883}
+received
+  token_topic: aomqtt/v1/t/b413feb168d3dbec
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:150", "seq": 150, "metric": "rtt", "value": 192.1, "timestamp": 1790753010.1608775}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:151", "seq": 151, "metric": "rtt", "value": 193.1, "timestamp": 1790753011.1608765}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:152", "seq": 152, "metric": "rtt", "value": 194.1, "timestamp": 1790753012.1608634}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:153", "seq": 153, "metric": "rtt", "value": 195.1, "timestamp": 1790753013.160863}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:154", "seq": 154, "metric": "rtt", "value": 196.1, "timestamp": 1790753014.1608906}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:155", "seq": 155, "metric": "rtt", "value": 197.1, "timestamp": 1790753015.160877}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:156", "seq": 156, "metric": "rtt", "value": 198.1, "timestamp": 1790753016.1608617}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:157", "seq": 157, "metric": "rtt", "value": 199.1, "timestamp": 1790753017.1608658}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:158", "seq": 158, "metric": "rtt", "value": 200.1, "timestamp": 1790753018.160862}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:159", "seq": 159, "metric": "rtt", "value": 201.1, "timestamp": 1790753019.1609051}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:160", "seq": 160, "metric": "rtt", "value": 202.1, "timestamp": 1790753020.1608853}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:161", "seq": 161, "metric": "rtt", "value": 203.1, "timestamp": 1790753021.160871}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:162", "seq": 162, "metric": "rtt", "value": 204.1, "timestamp": 1790753022.1608791}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:163", "seq": 163, "metric": "rtt", "value": 205.1, "timestamp": 1790753023.1608672}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:164", "seq": 164, "metric": "rtt", "value": 206.1, "timestamp": 1790753024.160894}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:165", "seq": 165, "metric": "rtt", "value": 207.1, "timestamp": 1790753025.1608794}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:166", "seq": 166, "metric": "rtt", "value": 208.1, "timestamp": 1790753026.1608713}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:167", "seq": 167, "metric": "rtt", "value": 209.1, "timestamp": 1790753027.1608686}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:168", "seq": 168, "metric": "rtt", "value": 210.1, "timestamp": 1790753028.1608677}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:169", "seq": 169, "metric": "rtt", "value": 211.1, "timestamp": 1790753029.1608624}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:170", "seq": 170, "metric": "rtt", "value": 212.1, "timestamp": 1790753030.1608896}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:171", "seq": 171, "metric": "rtt", "value": 213.1, "timestamp": 1790753031.1608799}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:172", "seq": 172, "metric": "rtt", "value": 214.1, "timestamp": 1790753032.1608737}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:173", "seq": 173, "metric": "rtt", "value": 215.1, "timestamp": 1790753033.160865}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:174", "seq": 174, "metric": "rtt", "value": 216.1, "timestamp": 1790753034.1608758}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:175", "seq": 175, "metric": "rtt", "value": 217.1, "timestamp": 1790753035.1608706}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:176", "seq": 176, "metric": "rtt", "value": 218.1, "timestamp": 1790753036.1609063}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:177", "seq": 177, "metric": "rtt", "value": 219.1, "timestamp": 1790753037.160836}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:178", "seq": 178, "metric": "rtt", "value": 220.1, "timestamp": 1790753038.1608703}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:179", "seq": 179, "metric": "rtt", "value": 221.1, "timestamp": 1790753039.160864}
+received
+  token_topic: aomqtt/v1/t/0facc9681b88bd39
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:180", "seq": 180, "metric": "rtt", "value": 222.1, "timestamp": 1790753040.1608865}
+received
+  token_topic: aomqtt/v1/t/5deccd4a83c8ff02
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:181", "seq": 181, "metric": "rtt", "value": 223.1, "timestamp": 1790753041.1608858}
+received
+  token_topic: aomqtt/v1/t/5deccd4a83c8ff02
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:182", "seq": 182, "metric": "rtt", "value": 224.1, "timestamp": 1790753042.1608212}
+received
+  token_topic: aomqtt/v1/t/5deccd4a83c8ff02
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:183", "seq": 183, "metric": "rtt", "value": 225.1, "timestamp": 1790753043.1608758}
+received
+  token_topic: aomqtt/v1/t/5deccd4a83c8ff02
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:184", "seq": 184, "metric": "rtt", "value": 226.1, "timestamp": 1790753044.1608665}
+received
+  token_topic: aomqtt/v1/t/5deccd4a83c8ff02
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:185", "seq": 185, "metric": "rtt", "value": 227.1, "timestamp": 1790753045.160875}
+received
+  token_topic: aomqtt/v1/t/5deccd4a83c8ff02
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:186", "seq": 186, "metric": "rtt", "value": 228.1, "timestamp": 1790753046.1608922}
+received
+  token_topic: aomqtt/v1/t/5deccd4a83c8ff02
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:187", "seq": 187, "metric": "rtt", "value": 229.1, "timestamp": 1790753047.1608715}
+received
+  token_topic: aomqtt/v1/t/5deccd4a83c8ff02
+  payload:     {"message_id": "e5-pub-T072057Z:e5-20260930T072057Z:188", "seq": 188, "metric": "rtt", "value": 230.1, "timestamp": 1790753048.1608768}
+delivery summary:
+  total received:       209
+  decrypt success:      209
+  decrypt failed:       0
+  unique messages:      189
+  duplicates:           20
+  duplicate_rate:       0.096
+  avg_delivery_ms:      0.632
+  p95_delivery_ms:      1.096
+Traceback (most recent call last):
+  File "/home/ogawa/aomqtt-paper-artifact/software/aomqtt-v1.3.7/examples/subscriber_example.py", line 186, in <module>
+    main()
+  File "/home/ogawa/aomqtt-paper-artifact/software/aomqtt-v1.3.7/examples/subscriber_example.py", line 169, in main
+    sub.loop_forever()
+  File "/home/ogawa/aomqtt-paper-artifact/software/aomqtt-v1.3.7/aomqtt/client.py", line 89, in loop_forever
+    self.transport.loop_forever()
+  File "/home/ogawa/aomqtt-paper-artifact/software/aomqtt-v1.3.7/aomqtt/transport/paho_adapter.py", line 77, in loop_forever
+    self.client.loop_forever()
+  File "/home/ogawa/aomqtt-e3-work/.venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 2297, in loop_forever
+    rc = self._loop(timeout)
+         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ogawa/aomqtt-e3-work/.venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 1663, in _loop
+    socklist = select.select(rlist, wlist, [], timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

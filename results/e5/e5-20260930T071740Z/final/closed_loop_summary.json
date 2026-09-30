@@ -1,0 +1,153 @@
+{
+  "schema": "aomqtt-e5-closed-loop-v3",
+  "scope": "single-step functional closed-loop demonstration; local publisher and subscriber processes; live MQTT broker",
+  "run_id": "e5-20260930T071740Z",
+  "broker": "172.16.10.200:1883",
+  "paper_artifact_git_head": "d6efc44ac2916e544b3f9dc3631eb1c6937ebd08",
+  "paper_artifact_git_status_short": "M README.md\n?? evaluation/source/e4/\n?? evaluation/source/e5/\n?? provenance/e4-provenance.md\n?? results/analysis/e3-privacy-b3-ablation-v2/\n?? results/analysis/e3-privacy-b3-ablation/\n?? results/analysis/e4-policy-guard/\n?? results/analysis/policy-guard-micro/\n?? results/e5/",
+  "python": "3.12.3",
+  "initial_policy_id": "e5_overlap5_fixed512",
+  "generated_policy_id": "e5_overlap5_fixed512_auto_s2",
+  "initial_overlap_sec": 5,
+  "overlap_step_sec": 2,
+  "expected_overlap_sec": 3,
+  "generated_overlap_sec": 3,
+  "duplicate_rate_threshold": 0.1,
+  "controller_decision": {
+    "action": "decrease_overlap",
+    "reason": "duplicate_rate is above threshold: 0.142857142857 > 0.1",
+    "changes": {
+      "rotation.overlap_sec": "-2"
+    }
+  },
+  "controller_metrics": {
+    "avg_publish_complete_ms": 0.38185718890634324,
+    "avg_delivery_latency_ms": 0.6321452912830171,
+    "loss_rate": 0.0,
+    "duplicate_rate": 0.142857142857,
+    "decrypt_success_rate": 1.0,
+    "avg_payload_total_overhead_bytes": 679.0571428571428,
+    "reconnect_count": 0,
+    "publisher_rows": 105,
+    "subscriber_rows": 105
+  },
+  "tracker_summary": "Policy deployment status\npolicy_id: e5_overlap5_fixed512_auto_s2\nsequence_no: 2\n\nclient_id            role         ACK        STATUS     reason_code        reason\n------------------------------------------------------------------------------------------------\ne5-pub-T071740Z      publisher    accepted   applied    -                  -\ne5-sub-T071740Z      subscriber   accepted   applied    -                  -",
+  "timing": {
+    "run_started_wall": 1790752660.1297905,
+    "pre_start_wall": 1790752662.2630968,
+    "pre_end_wall": 1790752752.263919,
+    "controller_started_wall": 1790752752.3322675,
+    "controller_finished_wall": 1790752756.126604,
+    "post_start_wall": 1790752761.1461017,
+    "post_end_wall": 1790752851.146296,
+    "pre_seconds_requested": 90.0,
+    "post_seconds_requested": 90.0,
+    "settle_seconds": 5.0
+  },
+  "pre": {
+    "publisher_rows": 105,
+    "subscriber_rows": 105,
+    "all_publisher_logical_messages": 90,
+    "successfully_published_logical_messages": 90,
+    "failed_publisher_logical_messages": 0,
+    "failed_publisher_logical_ids": [],
+    "publisher_reconnect_count": 0,
+    "unique_received_messages": 90,
+    "lost_messages": 0,
+    "loss_rate": 0.0,
+    "duplicate_message_ids": 15,
+    "duplicate_extra_rows": 15,
+    "duplicate_rate_per_received_row": 0.14285714285714285,
+    "duplicate_rate_per_unique_received": 0.16666666666666666,
+    "physical_publish_rows_per_successful_logical_message": 1.1666666666666667,
+    "decrypt_success_rate": 1.0,
+    "avg_delivery_latency_ms": 0.6321452912830171,
+    "publisher_policy_ids": [
+      "e5_overlap5_fixed512"
+    ],
+    "subscriber_policy_ids": [
+      "e5_overlap5_fixed512"
+    ],
+    "lost_ids": [],
+    "duplicate_ids": [
+      "e5-pub-T071740Z:e5-20260930T071740Z:18",
+      "e5-pub-T071740Z:e5-20260930T071740Z:19",
+      "e5-pub-T071740Z:e5-20260930T071740Z:20",
+      "e5-pub-T071740Z:e5-20260930T071740Z:21",
+      "e5-pub-T071740Z:e5-20260930T071740Z:22",
+      "e5-pub-T071740Z:e5-20260930T071740Z:48",
+      "e5-pub-T071740Z:e5-20260930T071740Z:49",
+      "e5-pub-T071740Z:e5-20260930T071740Z:50",
+      "e5-pub-T071740Z:e5-20260930T071740Z:51",
+      "e5-pub-T071740Z:e5-20260930T071740Z:52",
+      "e5-pub-T071740Z:e5-20260930T071740Z:78",
+      "e5-pub-T071740Z:e5-20260930T071740Z:79",
+      "e5-pub-T071740Z:e5-20260930T071740Z:80",
+      "e5-pub-T071740Z:e5-20260930T071740Z:81",
+      "e5-pub-T071740Z:e5-20260930T071740Z:82"
+    ]
+  },
+  "post": {
+    "publisher_rows": 99,
+    "subscriber_rows": 99,
+    "all_publisher_logical_messages": 90,
+    "successfully_published_logical_messages": 90,
+    "failed_publisher_logical_messages": 0,
+    "failed_publisher_logical_ids": [],
+    "publisher_reconnect_count": 0,
+    "unique_received_messages": 90,
+    "lost_messages": 0,
+    "loss_rate": 0.0,
+    "duplicate_message_ids": 9,
+    "duplicate_extra_rows": 9,
+    "duplicate_rate_per_received_row": 0.09090909090909091,
+    "duplicate_rate_per_unique_received": 0.1,
+    "physical_publish_rows_per_successful_logical_message": 1.1,
+    "decrypt_success_rate": 1.0,
+    "avg_delivery_latency_ms": 0.6202471376669527,
+    "publisher_policy_ids": [
+      "e5_overlap5_fixed512_auto_s2"
+    ],
+    "subscriber_policy_ids": [
+      "e5_overlap5_fixed512_auto_s2"
+    ],
+    "lost_ids": [],
+    "duplicate_ids": [
+      "e5-pub-T071740Z:e5-20260930T071740Z:108",
+      "e5-pub-T071740Z:e5-20260930T071740Z:109",
+      "e5-pub-T071740Z:e5-20260930T071740Z:110",
+      "e5-pub-T071740Z:e5-20260930T071740Z:138",
+      "e5-pub-T071740Z:e5-20260930T071740Z:139",
+      "e5-pub-T071740Z:e5-20260930T071740Z:140",
+      "e5-pub-T071740Z:e5-20260930T071740Z:168",
+      "e5-pub-T071740Z:e5-20260930T071740Z:169",
+      "e5-pub-T071740Z:e5-20260930T071740Z:170"
+    ]
+  },
+  "gates": {
+    "pre_publisher_reconnect_zero": true,
+    "pre_publisher_failed_logical_zero": true,
+    "pre_duplicate_rate_gt_0_10": true,
+    "controller_action_decrease_overlap": true,
+    "generated_overlap_expected": true,
+    "publisher_ack_applied": true,
+    "subscriber_ack_applied": true,
+    "post_generated_policy_publisher": true,
+    "post_generated_policy_subscriber": true,
+    "post_duplicate_rate_lower": true,
+    "post_duplicate_rate_below_threshold": true,
+    "post_publisher_reconnect_zero": true,
+    "post_publisher_failed_logical_zero": true,
+    "post_loss_zero": true,
+    "post_decrypt_success_one": true
+  },
+  "formal_pass": true,
+  "artifacts": {
+    "publisher_metrics_sha256": "55ff89df14025d0d6b488e6f285a5626804b19ae335c43d93d2581c9e760eb6b",
+    "subscriber_metrics_sha256": "9e0bd085c220557f4f0ae17e79ad3c2eab1ce36264749024e2b37da276400553",
+    "pre_publisher_snapshot_sha256": "1243a5ef31c82b736e4f0963ba1835e6bf55436f4a364f905d4c46f445af0c3a",
+    "pre_subscriber_snapshot_sha256": "6bfa6269ee4a15ee47b6ce125d6b679deaf200b97b903901e982f2d54e2b073e",
+    "generated_policy_sha256": "42023b00fd933b53c5155bc1711552f81beaeb5177c15672f413145e93a7a19b",
+    "public_signing_key_sha256": "4e79ab80f0a41fb50865c630740c8f814f1be1ccd6f7b009d43bb2da5667e92c"
+  }
+}

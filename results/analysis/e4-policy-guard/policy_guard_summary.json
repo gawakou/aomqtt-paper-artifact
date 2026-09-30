@@ -1,0 +1,149 @@
+{
+  "metadata": {
+    "evaluation": "AOMQTT guarded control-policy enforcement micro-evaluation",
+    "scope": "in-process control path; no live broker or network RTT",
+    "python": "3.12.3",
+    "platform": "Linux-6.8.0-139-generic-x86_64-with-glibc2.39",
+    "git_head": "d6efc44ac2916e544b3f9dc3631eb1c6937ebd08",
+    "git_status_short": "?? results/analysis/e3-privacy-b3-ablation-v2/\n?? results/analysis/e3-privacy-b3-ablation/",
+    "trials_per_condition": 5,
+    "conditions": [
+      {
+        "case_id": "PG0",
+        "description": "valid signed policy",
+        "expected_outcome": "accepted",
+        "expected_reason_code": "accepted"
+      },
+      {
+        "case_id": "PG1",
+        "description": "tampered after signing",
+        "expected_outcome": "rejected",
+        "expected_reason_code": "invalid_signature"
+      },
+      {
+        "case_id": "PG2",
+        "description": "expired signed policy",
+        "expected_outcome": "rejected",
+        "expected_reason_code": "expired_policy"
+      },
+      {
+        "case_id": "PG3",
+        "description": "replayed sequence number",
+        "expected_outcome": "rejected",
+        "expected_reason_code": "stale_sequence_no"
+      },
+      {
+        "case_id": "PG4",
+        "description": "untrusted signing key identifier",
+        "expected_outcome": "rejected",
+        "expected_reason_code": "unknown_key_id"
+      },
+      {
+        "case_id": "PG5",
+        "description": "signed policy disables payload encryption",
+        "expected_outcome": "rejected",
+        "expected_reason_code": "payload_encryption_disable_forbidden"
+      }
+    ],
+    "trusted_signature_key_id": "trusted-key",
+    "untrusted_signature_key_id": "old-key"
+  },
+  "summary": [
+    {
+      "case": "PG0",
+      "description": "valid signed policy",
+      "expected_outcome": "accepted",
+      "expected_reason_code": "accepted",
+      "trials": 5,
+      "passes": 5,
+      "accepted": 5,
+      "rejected": 0,
+      "lkg_retained_on_rejection": "",
+      "config_retained_on_rejection": "",
+      "elapsed_us_mean": 555.844,
+      "elapsed_us_sd": 42.177,
+      "elapsed_us_min": 514.132,
+      "elapsed_us_max": 626.374
+    },
+    {
+      "case": "PG1",
+      "description": "tampered after signing",
+      "expected_outcome": "rejected",
+      "expected_reason_code": "invalid_signature",
+      "trials": 5,
+      "passes": 5,
+      "accepted": 0,
+      "rejected": 5,
+      "lkg_retained_on_rejection": 5,
+      "config_retained_on_rejection": 5,
+      "elapsed_us_mean": 357.388,
+      "elapsed_us_sd": 30.145,
+      "elapsed_us_min": 325.82,
+      "elapsed_us_max": 402.249
+    },
+    {
+      "case": "PG2",
+      "description": "expired signed policy",
+      "expected_outcome": "rejected",
+      "expected_reason_code": "expired_policy",
+      "trials": 5,
+      "passes": 5,
+      "accepted": 0,
+      "rejected": 5,
+      "lkg_retained_on_rejection": 5,
+      "config_retained_on_rejection": 5,
+      "elapsed_us_mean": 352.354,
+      "elapsed_us_sd": 17.328,
+      "elapsed_us_min": 339.172,
+      "elapsed_us_max": 373.385
+    },
+    {
+      "case": "PG3",
+      "description": "replayed sequence number",
+      "expected_outcome": "rejected",
+      "expected_reason_code": "stale_sequence_no",
+      "trials": 5,
+      "passes": 5,
+      "accepted": 0,
+      "rejected": 5,
+      "lkg_retained_on_rejection": 5,
+      "config_retained_on_rejection": 5,
+      "elapsed_us_mean": 386.647,
+      "elapsed_us_sd": 60.014,
+      "elapsed_us_min": 341.821,
+      "elapsed_us_max": 489.765
+    },
+    {
+      "case": "PG4",
+      "description": "untrusted signing key identifier",
+      "expected_outcome": "rejected",
+      "expected_reason_code": "unknown_key_id",
+      "trials": 5,
+      "passes": 5,
+      "accepted": 0,
+      "rejected": 5,
+      "lkg_retained_on_rejection": 5,
+      "config_retained_on_rejection": 5,
+      "elapsed_us_mean": 120.594,
+      "elapsed_us_sd": 13.436,
+      "elapsed_us_min": 111.17,
+      "elapsed_us_max": 143.813
+    },
+    {
+      "case": "PG5",
+      "description": "signed policy disables payload encryption",
+      "expected_outcome": "rejected",
+      "expected_reason_code": "payload_encryption_disable_forbidden",
+      "trials": 5,
+      "passes": 5,
+      "accepted": 0,
+      "rejected": 5,
+      "lkg_retained_on_rejection": 5,
+      "config_retained_on_rejection": 5,
+      "elapsed_us_mean": 310.906,
+      "elapsed_us_sd": 14.443,
+      "elapsed_us_min": 295.55,
+      "elapsed_us_max": 327.006
+    }
+  ]
+}

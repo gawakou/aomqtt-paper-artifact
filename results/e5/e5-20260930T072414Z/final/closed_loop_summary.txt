@@ -1,0 +1,45 @@
+AOMQTT E5 closed-loop summary
+==============================
+run_id: e5-20260930T072414Z
+broker: 172.16.10.200:1883
+initial policy: e5_overlap5_fixed512, overlap=5 s
+decision: decrease_overlap
+configured overlap step: 2 s
+generated policy: e5_overlap5_fixed512_auto_s2, overlap=3 s
+
+pre:
+  successfully published logical: 90
+  publisher reconnects: 0
+  failed publisher logical: 0
+  physical/successful logical: 1.1666666666666667
+  duplicate rate / received row: 11.765%
+  loss rate: 0.000%
+  decrypt success: 100.000%
+
+post:
+  successfully published logical: 90
+  publisher reconnects: 0
+  failed publisher logical: 0
+  physical/successful logical: 1.1
+  duplicate rate / received row: 6.250%
+  loss rate: 0.000%
+  decrypt success: 100.000%
+
+gates:
+  pre_publisher_reconnect_zero: PASS
+  pre_publisher_failed_logical_zero: PASS
+  pre_duplicate_rate_gt_0_10: PASS
+  controller_action_decrease_overlap: PASS
+  generated_overlap_expected: PASS
+  publisher_ack_applied: PASS
+  subscriber_ack_applied: PASS
+  post_generated_policy_publisher: PASS
+  post_generated_policy_subscriber: PASS
+  post_duplicate_rate_lower: PASS
+  post_duplicate_rate_below_threshold: PASS
+  post_publisher_reconnect_zero: PASS
+  post_publisher_failed_logical_zero: PASS
+  post_loss_zero: PASS
+  post_decrypt_success_one: PASS
+
+E5-CLOSED-LOOP=PASS

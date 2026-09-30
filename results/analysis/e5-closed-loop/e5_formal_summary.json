@@ -1,0 +1,92 @@
+{
+  "schema": "aomqtt-e5-formal-summary-v1",
+  "results_root": "/home/ogawa/aomqtt-paper-artifact/results/e5",
+  "successful_formal_runs": 5,
+  "expected_formal_runs": 5,
+  "formal_set_complete": true,
+  "formal_run_ids": [
+    "e5-20260930T070708Z",
+    "e5-20260930T071422Z",
+    "e5-20260930T071740Z",
+    "e5-20260930T072057Z",
+    "e5-20260930T072414Z"
+  ],
+  "nonformal_or_failed_run_ids": [
+    "e5-20260930T062834Z"
+  ],
+  "all_required_gates": [
+    "pre_publisher_reconnect_zero",
+    "pre_publisher_failed_logical_zero",
+    "pre_duplicate_rate_gt_0_10",
+    "controller_action_decrease_overlap",
+    "generated_overlap_expected",
+    "publisher_ack_applied",
+    "subscriber_ack_applied",
+    "post_generated_policy_publisher",
+    "post_generated_policy_subscriber",
+    "post_duplicate_rate_lower",
+    "post_duplicate_rate_below_threshold",
+    "post_publisher_reconnect_zero",
+    "post_publisher_failed_logical_zero",
+    "post_loss_zero",
+    "post_decrypt_success_one"
+  ],
+  "aggregate": {
+    "pre_duplicate_rate": {
+      "n": 5,
+      "mean": 0.12773109243697478,
+      "sd": 0.013808131701810908,
+      "min": 0.11764705882352941,
+      "max": 0.14285714285714285
+    },
+    "post_duplicate_rate": {
+      "n": 5,
+      "mean": 0.07386363636363637,
+      "sd": 0.01556029992912404,
+      "min": 0.0625,
+      "max": 0.09090909090909091
+    },
+    "duplicate_rate_drop": {
+      "n": 5,
+      "mean": 0.05386745607333842,
+      "sd": 0.0017521682273131318,
+      "min": 0.05194805194805194,
+      "max": 0.05514705882352941
+    },
+    "duplicate_rate_relative_reduction": {
+      "n": 5,
+      "mean": 0.42670454545454545,
+      "sd": 0.05757310973775896,
+      "min": 0.3636363636363636,
+      "max": 0.46875
+    },
+    "pre_loss_rate": {
+      "n": 5,
+      "mean": 0.0,
+      "sd": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "post_loss_rate": {
+      "n": 5,
+      "mean": 0.0,
+      "sd": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "pre_physical_per_logical": {
+      "n": 5,
+      "mean": 1.1666666666666667,
+      "sd": 0.0,
+      "min": 1.1666666666666667,
+      "max": 1.1666666666666667
+    },
+    "post_physical_per_logical": {
+      "n": 5,
+      "mean": 1.1,
+      "sd": 0.0,
+      "min": 1.1,
+      "max": 1.1
+    }
+  }
+}

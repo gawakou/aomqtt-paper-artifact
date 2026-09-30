@@ -1,0 +1,147 @@
+{
+  "schema": "aomqtt-e5-closed-loop-v3",
+  "scope": "single-step functional closed-loop demonstration; local publisher and subscriber processes; live MQTT broker",
+  "run_id": "e5-20260930T072057Z",
+  "broker": "172.16.10.200:1883",
+  "paper_artifact_git_head": "d6efc44ac2916e544b3f9dc3631eb1c6937ebd08",
+  "paper_artifact_git_status_short": "M README.md\n?? evaluation/source/e4/\n?? evaluation/source/e5/\n?? provenance/e4-provenance.md\n?? results/analysis/e3-privacy-b3-ablation-v2/\n?? results/analysis/e3-privacy-b3-ablation/\n?? results/analysis/e4-policy-guard/\n?? results/analysis/policy-guard-micro/\n?? results/e5/",
+  "python": "3.12.3",
+  "initial_policy_id": "e5_overlap5_fixed512",
+  "generated_policy_id": "e5_overlap5_fixed512_auto_s2",
+  "initial_overlap_sec": 5,
+  "overlap_step_sec": 2,
+  "expected_overlap_sec": 3,
+  "generated_overlap_sec": 3,
+  "duplicate_rate_threshold": 0.1,
+  "controller_decision": {
+    "action": "decrease_overlap",
+    "reason": "duplicate_rate is above threshold: 0.117647058824 > 0.1",
+    "changes": {
+      "rotation.overlap_sec": "-2"
+    }
+  },
+  "controller_metrics": {
+    "avg_publish_complete_ms": 0.3860686545348948,
+    "avg_delivery_latency_ms": 0.6310402178296856,
+    "loss_rate": 0.0,
+    "duplicate_rate": 0.117647058824,
+    "decrypt_success_rate": 1.0,
+    "avg_payload_total_overhead_bytes": 679.2,
+    "reconnect_count": 0,
+    "publisher_rows": 105,
+    "subscriber_rows": 102
+  },
+  "tracker_summary": "Policy deployment status\npolicy_id: e5_overlap5_fixed512_auto_s2\nsequence_no: 2\n\nclient_id            role         ACK        STATUS     reason_code        reason\n------------------------------------------------------------------------------------------------\ne5-pub-T072057Z      publisher    accepted   applied    -                  -\ne5-sub-T072057Z      subscriber   accepted   applied    -                  -",
+  "timing": {
+    "run_started_wall": 1790752857.3758464,
+    "pre_start_wall": 1790752859.5077615,
+    "pre_end_wall": 1790752949.5086021,
+    "controller_started_wall": 1790752949.5772698,
+    "controller_finished_wall": 1790752953.370812,
+    "post_start_wall": 1790752958.3903406,
+    "post_end_wall": 1790753048.390499,
+    "pre_seconds_requested": 90.0,
+    "post_seconds_requested": 90.0,
+    "settle_seconds": 5.0
+  },
+  "pre": {
+    "publisher_rows": 105,
+    "subscriber_rows": 102,
+    "all_publisher_logical_messages": 90,
+    "successfully_published_logical_messages": 90,
+    "failed_publisher_logical_messages": 0,
+    "failed_publisher_logical_ids": [],
+    "publisher_reconnect_count": 0,
+    "unique_received_messages": 90,
+    "lost_messages": 0,
+    "loss_rate": 0.0,
+    "duplicate_message_ids": 12,
+    "duplicate_extra_rows": 12,
+    "duplicate_rate_per_received_row": 0.11764705882352941,
+    "duplicate_rate_per_unique_received": 0.13333333333333333,
+    "physical_publish_rows_per_successful_logical_message": 1.1666666666666667,
+    "decrypt_success_rate": 1.0,
+    "avg_delivery_latency_ms": 0.6310402178296856,
+    "publisher_policy_ids": [
+      "e5_overlap5_fixed512"
+    ],
+    "subscriber_policy_ids": [
+      "e5_overlap5_fixed512"
+    ],
+    "lost_ids": [],
+    "duplicate_ids": [
+      "e5-pub-T072057Z:e5-20260930T072057Z:1",
+      "e5-pub-T072057Z:e5-20260930T072057Z:2",
+      "e5-pub-T072057Z:e5-20260930T072057Z:3",
+      "e5-pub-T072057Z:e5-20260930T072057Z:31",
+      "e5-pub-T072057Z:e5-20260930T072057Z:32",
+      "e5-pub-T072057Z:e5-20260930T072057Z:33",
+      "e5-pub-T072057Z:e5-20260930T072057Z:34",
+      "e5-pub-T072057Z:e5-20260930T072057Z:4",
+      "e5-pub-T072057Z:e5-20260930T072057Z:61",
+      "e5-pub-T072057Z:e5-20260930T072057Z:62",
+      "e5-pub-T072057Z:e5-20260930T072057Z:63",
+      "e5-pub-T072057Z:e5-20260930T072057Z:64"
+    ]
+  },
+  "post": {
+    "publisher_rows": 99,
+    "subscriber_rows": 96,
+    "all_publisher_logical_messages": 90,
+    "successfully_published_logical_messages": 90,
+    "failed_publisher_logical_messages": 0,
+    "failed_publisher_logical_ids": [],
+    "publisher_reconnect_count": 0,
+    "unique_received_messages": 90,
+    "lost_messages": 0,
+    "loss_rate": 0.0,
+    "duplicate_message_ids": 6,
+    "duplicate_extra_rows": 6,
+    "duplicate_rate_per_received_row": 0.0625,
+    "duplicate_rate_per_unique_received": 0.06666666666666667,
+    "physical_publish_rows_per_successful_logical_message": 1.1,
+    "decrypt_success_rate": 1.0,
+    "avg_delivery_latency_ms": 0.6207451224327087,
+    "publisher_policy_ids": [
+      "e5_overlap5_fixed512_auto_s2"
+    ],
+    "subscriber_policy_ids": [
+      "e5_overlap5_fixed512_auto_s2"
+    ],
+    "lost_ids": [],
+    "duplicate_ids": [
+      "e5-pub-T072057Z:e5-20260930T072057Z:121",
+      "e5-pub-T072057Z:e5-20260930T072057Z:122",
+      "e5-pub-T072057Z:e5-20260930T072057Z:151",
+      "e5-pub-T072057Z:e5-20260930T072057Z:152",
+      "e5-pub-T072057Z:e5-20260930T072057Z:181",
+      "e5-pub-T072057Z:e5-20260930T072057Z:182"
+    ]
+  },
+  "gates": {
+    "pre_publisher_reconnect_zero": true,
+    "pre_publisher_failed_logical_zero": true,
+    "pre_duplicate_rate_gt_0_10": true,
+    "controller_action_decrease_overlap": true,
+    "generated_overlap_expected": true,
+    "publisher_ack_applied": true,
+    "subscriber_ack_applied": true,
+    "post_generated_policy_publisher": true,
+    "post_generated_policy_subscriber": true,
+    "post_duplicate_rate_lower": true,
+    "post_duplicate_rate_below_threshold": true,
+    "post_publisher_reconnect_zero": true,
+    "post_publisher_failed_logical_zero": true,
+    "post_loss_zero": true,
+    "post_decrypt_success_one": true
+  },
+  "formal_pass": true,
+  "artifacts": {
+    "publisher_metrics_sha256": "a319bc30a70f968636163cade709721f3c5d8258ca21307161499110f7a369cc",
+    "subscriber_metrics_sha256": "b8ccccbab16af35ed64c9af5268367be9ece0f2918c8fbbb853848154f0949d5",
+    "pre_publisher_snapshot_sha256": "a97972e30f6b7ad2b9284b9a993016786455a23f69d3e082b9902d1359018bef",
+    "pre_subscriber_snapshot_sha256": "96602e1a8018fe0736deccb682567c85fd3c8f17fc9dc944f81306af6e4e5ece",
+    "generated_policy_sha256": "e4ffb2868fb8171cde943274250dd2e4505bb224e697240cf73e65b6a4d987f5",
+    "public_signing_key_sha256": "9908866e0e5db7ca790c2b1ea1f3f7ab59ba48ac29b6ca1d5dfe4797372c25c4"
+  }
+}

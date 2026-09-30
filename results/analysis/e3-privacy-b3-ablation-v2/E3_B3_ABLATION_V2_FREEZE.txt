@@ -1,0 +1,44 @@
+AOMQTT E3-B3 Feature Ablation v2 Freeze
+=======================================
+freeze_utc: 2026-09-30T08:10:16Z
+paper_artifact_head_before_final_commit: d6efc44ac2916e544b3f9dc3631eb1c6937ebd08
+python: Python 3.12.3
+
+Purpose:
+  Quantify how much of E3-B3 adjacent-token linkability is attributable to the
+  broker-visible overlap co-occurrence feature.
+
+Frozen input:
+  results/analysis/e3-privacy/e3b_pair_scores.csv
+  sha256: ca19806abd4c988b5d7b842409b05bbbe221128aec5ee4ab72fea8ebe709e0a7
+
+Frozen analyzer:
+  evaluation/source/e3/analyze_e3b_b3_feature_ablation_v2.py
+  sha256: d825f7abf262142b3cdb40914217ece8de441b557a47248c70feec34f0543db5
+
+Analysis:
+  condition: B3
+  candidate pairs: 3520
+  validation: five-fold Leave-One-Run-Out
+  assignment: Hungarian one-to-one assignment
+
+Frozen results:
+  full:
+    Top-1: 0.9955
+    MRR:   0.9919
+  base_no_cooccurrence:
+    Top-1: 0.3477
+    MRR:   0.5712
+  cooccurrence_only:
+    Top-1: 0.9818
+    MRR:   0.9802
+
+Interpretation scope:
+  Under the frozen synthetic Poisson workload and the E3-B3 observer/features,
+  the overlap co-occurrence feature provides the dominant adjacent-token
+  linkage cue. This result does not establish a universal leakage rate for
+  arbitrary MQTT workloads, timing distributions, or observers.
+
+Reproducibility:
+  The analyzer was rerun during this freeze and all three generated outputs
+  matched the frozen v2 outputs byte-for-byte.

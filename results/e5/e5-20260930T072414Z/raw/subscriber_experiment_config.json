@@ -1,0 +1,26 @@
+{
+  "experiment": {
+    "experiment_id": "aomqtt-e5-closed-loop",
+    "run_id": "e5-20260930T072414Z",
+    "metrics_schema_version": 2
+  },
+  "config": {
+    "role": "subscriber",
+    "broker": "172.16.10.200",
+    "port": 1883,
+    "client_id": "e5-sub-T072414Z",
+    "config": "/home/ogawa/aomqtt-paper-artifact/software/aomqtt-v1.3.7/examples/config.example.yaml",
+    "policy": "/home/ogawa/aomqtt-paper-artifact/evaluation/source/e5/e5_initial_policy.yaml",
+    "topic": "e5/siteA/closedloop",
+    "qos": null,
+    "token_mode": "config",
+    "rotation": false,
+    "no_rotation": false,
+    "rotation_interval": 30,
+    "rotation_overlap": 5,
+    "refresh_interval": 1.0,
+    "delivery_csv": "/home/ogawa/aomqtt-paper-artifact/results/e5/e5-20260930T072414Z/raw/subscriber_metrics.csv",
+    "effective_policy_id": "e5_overlap5_fixed512",
+    "effective_policy_name": "e5_overlap5_fixed512"
+  }
+}

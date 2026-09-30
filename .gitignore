@@ -18,3 +18,7 @@ id_ed25519
 *.sqlite
 *.sqlite3
 *.db
+__pycache__/
+*.py[cod]
+!results/e5/**/policy_signing_public.key
+.pytest_cache/

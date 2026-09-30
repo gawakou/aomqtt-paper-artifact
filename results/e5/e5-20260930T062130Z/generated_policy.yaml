@@ -1,0 +1,21 @@
+id: e5_overlap5_fixed512_auto_s2
+name: e5_overlap5_fixed512_auto_s2
+token_mode: whole
+qos: 1
+retain: false
+rotation:
+  enabled: true
+  interval_sec: 30
+  overlap_sec: 0
+padding:
+  enabled: true
+  mode: fixed
+  fixed_size: 512
+auto_control:
+  source_policy_id: e5_overlap5_fixed512
+  generated_policy_id: e5_overlap5_fixed512_auto_s2
+  sequence_no: 2
+  decision_action: decrease_overlap
+  decision_reason: 'duplicate_rate is above threshold: 0.11764705882352941 > 0.1'
+  decision_changes:
+    rotation.overlap_sec: '-5'

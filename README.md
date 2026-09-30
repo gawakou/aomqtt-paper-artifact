@@ -29,12 +29,14 @@ https://github.com/gawakou/aomqtt-client-sdk
 - `evaluation/source/e1/`: E1 replication runner, baseline helpers, and analyzer
 - `evaluation/source/e2/`: frozen E2 analysis programs
 - `evaluation/source/e3/`: frozen E3 event-plan, observer, runner, analysis, and test programs
+- `evaluation/source/e4/`: frozen E4 guarded control-policy micro-evaluation harness
 - `results/e1/`: one-publisher / one-subscriber E1 replication archive
 - `results/e1/summary/`: directly viewable E1 per-run and per-condition summary tables
 - `results/e2/full/`: ten accepted Full AOMQTT E2 run archives
 - `results/e2/plain/`: ten accepted Plain MQTT E2 run archives
 - `results/e3/`: frozen E3 formal-data archive and integrity sidecar
 - `results/analysis/e3-privacy/`: directly inspectable E3 privacy-analysis outputs
+- `results/analysis/e4-policy-guard/`: frozen E4 guarded control-policy results and integrity manifest
 - `results/analysis/e2-full/`: frozen Full AOMQTT aggregate analysis
 - `results/analysis/e2-plain/`: frozen Plain MQTT aggregate analysis
 - `provenance/`: software and experimental provenance
@@ -73,6 +75,25 @@ E3 uses five accepted formal runs per condition.
 
 See `provenance/e3-provenance.md` and `results/analysis/e3-privacy/`.
 
+## E4 guarded control-policy enforcement
+
+E4 evaluates the guarded runtime policy-application path in-process.
+
+- Six conditions (PG0-PG5), five trials per condition.
+- PG0 is a valid signed update and must be accepted and applied.
+- PG1-PG5 cover invalid signature, expiration, replay/stale sequence,
+  untrusted signing key identifier, and a validly signed request that disables
+  required payload encryption.
+- The formal gate requires rejected candidates to preserve the last-known-good
+  policy and effective publisher configuration.
+- All 30 candidate-policy trials passed the predefined gate.
+
+E4 timing is local control-path execution time only; it excludes broker,
+network, and controller-decision latency.
+
+See `provenance/e4-provenance.md` and
+`results/analysis/e4-policy-guard/`.
+
 ## Artifact integrity
 
 Verify repository files with:
@@ -99,3 +120,35 @@ See [SOURCE_PROVENANCE.md](SOURCE_PROVENANCE.md).
 ## Rights
 
 See [RIGHTS.md](RIGHTS.md).
+
+<!-- E5-CLOSED-LOOP-START -->
+## E5 — Single-step closed-loop observation-driven control
+
+E5 exercises the implemented AOMQTT v1.3.7 closed-loop path against a live
+MQTT broker. Five formal runs start with 30-s token rotation and a 5-s overlap.
+When the observed subscriber duplicate rate exceeds 10%, the existing
+rule-based controller selects `decrease_overlap`, generates a signed runtime
+policy reducing overlap to 3 s, and waits for both Publisher and Subscriber
+ACK/Status confirmation.
+
+Across the five formal runs, duplicate rate decreased from 12.773% ± 1.381% to
+7.386% ± 1.556% while delivery loss remained 0% and decryption success remained
+100% in every run. All formal validity and application gates passed.
+
+Artifacts:
+- `evaluation/source/e5/`
+- `results/e5/`
+- `results/analysis/e5-closed-loop/`
+- `provenance/e5-provenance.md`
+
+E5 is a single-step functional closed-loop demonstration; it does not claim
+controller stability, convergence, or optimality.
+<!-- E5-CLOSED-LOOP-END -->
+
+<!-- ARTIFACT-INDEX-START -->
+## Artifact index
+
+For a reviewer-oriented map from E1 through E5, including the final E3-B3
+feature ablation, E4 Policy Guard evaluation, E5 formal/pilot classification,
+and integrity commands, see [ARTIFACT_INDEX.md](ARTIFACT_INDEX.md).
+<!-- ARTIFACT-INDEX-END -->

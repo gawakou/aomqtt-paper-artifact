@@ -1,0 +1,33 @@
+AOMQTT closed-loop observation snapshot
+=======================================
+label: pre-control
+
+publisher:
+  raw_rows: 105
+  all_logical_messages: 90
+  successfully_published_logical_messages: 90
+  failed_logical_messages: 0
+  failed_logical_ids: []
+  avg_publish_complete_ms: 0.386068655
+  avg_payload_total_overhead_bytes: 679.200000000
+  reconnect_count: 0
+
+subscriber:
+  raw_rows: 102
+  seq_source: logical_seq
+  unique_received_logical_messages: 90
+  duplicate_extra_rows: 12
+  duplicate_rate: 0.117647059
+  successful_publisher_logical_messages: 90
+  lost_successfully_published_messages: 0
+  loss_rate: 0.000000000
+  lost_ids: []
+  decrypt_success_rate: 1.000000000
+  avg_delivery_latency_ms: 0.631040218
+
+controller inputs:
+  /home/ogawa/aomqtt-paper-artifact/results/e5/e5-20260930T072057Z/pre/controller-input/publisher_controller_input.csv
+  /home/ogawa/aomqtt-paper-artifact/results/e5/e5-20260930T072057Z/pre/controller-input/subscriber_controller_input.csv
+
+manifest: /home/ogawa/aomqtt-paper-artifact/results/e5/e5-20260930T072057Z/pre/controller-input/observation_manifest.json
+OBSERVATION-ADAPTER=PASS

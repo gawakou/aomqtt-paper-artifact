@@ -1,0 +1,45 @@
+{
+  "schema": "aomqtt-closed-loop-observation-adapter-v1",
+  "label": "pre-control",
+  "purpose": "Evaluation-only adapter for the unmodified AOMQTT v1.3.7 AutoPolicyController metric input.",
+  "inputs": {
+    "publisher_raw": {
+      "path": "/home/ogawa/aomqtt-paper-artifact/results/e5/e5-20260930T063929Z/pre/publisher_raw_snapshot.csv",
+      "sha256": "bf354018d913e8ecbd83b28259b017eb39c00c8e55e58aea40e350cdeeba9c3a"
+    },
+    "subscriber_raw": {
+      "path": "/home/ogawa/aomqtt-paper-artifact/results/e5/e5-20260930T063929Z/pre/subscriber_raw_snapshot.csv",
+      "sha256": "e45f590560f2ca552085e04d9f89e5a5cad67ce8e1e30867d6de9809f1c0dedd"
+    }
+  },
+  "outputs": {
+    "publisher_controller_input": {
+      "path": "/home/ogawa/aomqtt-paper-artifact/results/e5/e5-20260930T063929Z/pre/controller-input/publisher_controller_input.csv",
+      "sha256": "bf354018d913e8ecbd83b28259b017eb39c00c8e55e58aea40e350cdeeba9c3a"
+    },
+    "subscriber_controller_input": {
+      "path": "/home/ogawa/aomqtt-paper-artifact/results/e5/e5-20260930T063929Z/pre/controller-input/subscriber_controller_input.csv",
+      "sha256": "9afc05c265f8e2c21b6ad8cfa8cc83eac50112cb80beb72b35eebee73b02583d"
+    }
+  },
+  "independent_metrics": {
+    "publisher": {
+      "raw_rows": 105,
+      "avg_publish_complete_ms": 0.4035232499951408,
+      "avg_payload_total_overhead_bytes": 679.1619047619048,
+      "reconnect_count": 95
+    },
+    "subscriber": {
+      "raw_rows": 102,
+      "seq_source": "logical_seq",
+      "unique_logical_sequences": 89,
+      "duplicate_rows": 13,
+      "duplicate_rate": 0.12745098039215685,
+      "expected_sequence_count": 90,
+      "missing_logical_sequences": 1,
+      "loss_rate": 0.011111111111111112,
+      "decrypt_success_rate": 1.0,
+      "avg_delivery_latency_ms": 0.6656085743623621
+    }
+  }
+}

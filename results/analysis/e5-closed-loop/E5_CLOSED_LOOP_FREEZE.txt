@@ -1,0 +1,71 @@
+AOMQTT E5 Closed-Loop Evaluation Freeze
+========================================
+freeze_utc: 2026-09-30T07:37:18Z
+paper_artifact_head_before_freeze: d6efc44ac2916e544b3f9dc3631eb1c6937ebd08
+python: Python 3.12.3
+broker: 172.16.10.200:1883
+
+formal_source_hashes:
+  evaluation/source/e5/run_e5_closed_loop.py
+    sha256: c5302b662de391eeba2826a0eb8909c7578a3e040f74aa70283bb721eadcf702
+  evaluation/source/e5/build_closed_loop_observation.py
+    sha256: f9a1f6113fc244cf695d390a675f32e55c95fcef59c09235c6a30ec3e3117369
+  evaluation/source/e5/e5_initial_policy.yaml
+    sha256: ed9ee48d023c8c0ffbceb3e5b10677ab4a4369494fff19bcd7135fcd7be7be0f
+
+formal_design:
+  publisher_subscriber_layout: two local processes on publisher-1
+  broker: live Mosquitto at 172.16.10.200:1883
+  qos: 1
+  token_mode: whole
+  rotation_interval_sec: 30
+  initial_overlap_sec: 5
+  duplicate_rate_threshold: 0.10
+  overlap_step_sec: 2
+  generated_overlap_sec: 3
+  pre_window_sec: 90
+  settle_sec: 5
+  post_window_sec: 90
+  formal_runs: 5
+
+formal_run_ids:
+  - e5-20260930T070708Z
+  - e5-20260930T071422Z
+  - e5-20260930T071740Z
+  - e5-20260930T072057Z
+  - e5-20260930T072414Z
+
+formal_result:
+  E5-FORMAL-SET: PASS
+  successful_formal_runs: 5/5
+  duplicate_rate_pre_mean_pct: 12.773
+  duplicate_rate_pre_sd_pct: 1.381
+  duplicate_rate_post_mean_pct: 7.386
+  duplicate_rate_post_sd_pct: 1.556
+  absolute_drop_mean_percentage_points: 5.387
+  absolute_drop_sd_percentage_points: 0.175
+  relative_reduction_mean_pct: 42.670
+  relative_reduction_sd_pct: 5.757
+  physical_mqtt_rows_per_successful_logical_pre: 1.166667
+  physical_mqtt_rows_per_successful_logical_post: 1.100000
+  pre_loss: 0% in all formal runs
+  post_loss: 0% in all formal runs
+  pre_decrypt_success: 100% in all formal runs
+  post_decrypt_success: 100% in all formal runs
+  publisher_reconnects: 0 in all formal phases
+  local_publish_failures: 0 in all formal phases
+
+pilot_and_aborted_runs:
+  - e5-20260930T062130Z
+    role: pilot
+    note: closed-loop control succeeded through signed policy publish and both-client accepted/applied, but the initial harness failed while parsing mixed controller stdout before final summary generation.
+  - e5-20260930T062834Z
+    role: pilot
+    note: 5 s -> 0 s adaptation removed overlap duplicates but produced 3/90 post-window losses; all three missing messages occurred about 0.438 s after consecutive epoch boundaries.
+  - e5-20260930T063929Z
+    role: aborted validity run
+    note: one publisher-side local PUBLISH failure (rc=4) and one actual reconnect; delivery loss among successfully published logical messages was 0 after corrected analysis.
+
+Important scope:
+  E5 is a single-step functional closed-loop demonstration. It does not establish
+  controller stability, convergence, optimal overlap, or multi-step optimality.

@@ -1,0 +1,132 @@
+policy id:           e5_overlap5_fixed512
+policy name:         e5_overlap5_fixed512
+token mode:          whole
+rotation enabled:    True
+rotation interval:   30s
+rotation overlap:    5s
+mqtt qos:            1
+pacing mode:         fixed-rate
+configured interval: 1.0s
+policy file:         /home/ogawa/aomqtt-paper-artifact/evaluation/source/e5/e5_initial_policy.yaml
+padding enabled:     True
+padding mode:        fixed
+current epoch:       59691643
+plaintext topic:     e5/siteA/closedloop
+token topic current: aomqtt/v1/t/583823a47324361b
+experiment id:       aomqtt-e5-closed-loop
+run id:              e5-20260930T062130Z
+metrics csv:         /home/ogawa/aomqtt-paper-artifact/results/e5/e5-20260930T062130Z/raw/publisher_metrics.csv
+experiment config:   /home/ogawa/aomqtt-paper-artifact/results/e5/e5-20260930T062130Z/raw/publisher_experiment_config.json
+control topic:       aomqtt/control/e5-T062130Z/policy
+control group id:    e5-T062130Z
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:0", "seq": 0, "metric": "rtt", "value": 42.1, "timestamp": 1790749293.0908258} mqtt_messages=2 success=2/2 avg_publish_complete_ms=0.359 padding_added=782 epoch_state=59691643
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:1", "seq": 1, "metric": "rtt", "value": 43.1, "timestamp": 1790749294.0909476} mqtt_messages=2 success=2/2 avg_publish_complete_ms=0.302 padding_added=782 epoch_state=59691643
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:2", "seq": 2, "metric": "rtt", "value": 44.1, "timestamp": 1790749295.0909655} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.356 padding_added=391 epoch_state=59691643
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:3", "seq": 3, "metric": "rtt", "value": 45.1, "timestamp": 1790749296.0909748} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.350 padding_added=391 epoch_state=59691643
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:4", "seq": 4, "metric": "rtt", "value": 46.1, "timestamp": 1790749297.0909421} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.328 padding_added=391 epoch_state=59691643
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:5", "seq": 5, "metric": "rtt", "value": 47.1, "timestamp": 1790749298.0909667} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.355 padding_added=391 epoch_state=59691643
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:6", "seq": 6, "metric": "rtt", "value": 48.1, "timestamp": 1790749299.0909884} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.484 padding_added=391 epoch_state=59691643
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:7", "seq": 7, "metric": "rtt", "value": 49.1, "timestamp": 1790749300.0909252} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.399 padding_added=391 epoch_state=59691643
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:8", "seq": 8, "metric": "rtt", "value": 50.1, "timestamp": 1790749301.0909524} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.353 padding_added=391 epoch_state=59691643
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:9", "seq": 9, "metric": "rtt", "value": 51.1, "timestamp": 1790749302.0909522} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.370 padding_added=391 epoch_state=59691643
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:10", "seq": 10, "metric": "rtt", "value": 52.1, "timestamp": 1790749303.0909457} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.340 padding_added=389 epoch_state=59691643
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:11", "seq": 11, "metric": "rtt", "value": 53.1, "timestamp": 1790749304.0909011} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.327 padding_added=389 epoch_state=59691643
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:12", "seq": 12, "metric": "rtt", "value": 54.1, "timestamp": 1790749305.0909505} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.433 padding_added=389 epoch_state=59691643
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:13", "seq": 13, "metric": "rtt", "value": 55.1, "timestamp": 1790749306.0909467} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.369 padding_added=389 epoch_state=59691643
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:14", "seq": 14, "metric": "rtt", "value": 56.1, "timestamp": 1790749307.0909493} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.351 padding_added=389 epoch_state=59691643
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:15", "seq": 15, "metric": "rtt", "value": 57.1, "timestamp": 1790749308.0909424} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.348 padding_added=389 epoch_state=59691643
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:16", "seq": 16, "metric": "rtt", "value": 58.1, "timestamp": 1790749309.0909727} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.511 padding_added=389 epoch_state=59691643
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:17", "seq": 17, "metric": "rtt", "value": 59.1, "timestamp": 1790749310.0909483} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.388 padding_added=389 epoch_state=59691643
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:18", "seq": 18, "metric": "rtt", "value": 60.1, "timestamp": 1790749311.0909622} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.353 padding_added=389 epoch_state=59691643
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:19", "seq": 19, "metric": "rtt", "value": 61.1, "timestamp": 1790749312.0909128} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.338 padding_added=389 epoch_state=59691643
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:20", "seq": 20, "metric": "rtt", "value": 62.1, "timestamp": 1790749313.0909426} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.342 padding_added=389 epoch_state=59691643
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:21", "seq": 21, "metric": "rtt", "value": 63.1, "timestamp": 1790749314.0909023} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.330 padding_added=389 epoch_state=59691643
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:22", "seq": 22, "metric": "rtt", "value": 64.1, "timestamp": 1790749315.0909803} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.358 padding_added=389 epoch_state=59691643
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:23", "seq": 23, "metric": "rtt", "value": 65.1, "timestamp": 1790749316.0909219} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.376 padding_added=389 epoch_state=59691643
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:24", "seq": 24, "metric": "rtt", "value": 66.1, "timestamp": 1790749317.0909002} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.352 padding_added=389 epoch_state=59691643
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:25", "seq": 25, "metric": "rtt", "value": 67.1, "timestamp": 1790749318.0909421} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.373 padding_added=389 epoch_state=59691643
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:26", "seq": 26, "metric": "rtt", "value": 68.1, "timestamp": 1790749319.0909383} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.586 padding_added=389 epoch_state=59691643
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:27", "seq": 27, "metric": "rtt", "value": 69.1, "timestamp": 1790749320.0909142} mqtt_messages=2 success=2/2 avg_publish_complete_ms=0.356 padding_added=778 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:28", "seq": 28, "metric": "rtt", "value": 70.1, "timestamp": 1790749321.0909455} mqtt_messages=2 success=2/2 avg_publish_complete_ms=0.305 padding_added=778 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:29", "seq": 29, "metric": "rtt", "value": 71.1, "timestamp": 1790749322.0909104} mqtt_messages=2 success=2/2 avg_publish_complete_ms=0.318 padding_added=778 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:30", "seq": 30, "metric": "rtt", "value": 72.1, "timestamp": 1790749323.0909505} mqtt_messages=2 success=2/2 avg_publish_complete_ms=0.310 padding_added=778 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:31", "seq": 31, "metric": "rtt", "value": 73.1, "timestamp": 1790749324.090978} mqtt_messages=2 success=2/2 avg_publish_complete_ms=0.309 padding_added=780 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:32", "seq": 32, "metric": "rtt", "value": 74.1, "timestamp": 1790749325.0909503} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.436 padding_added=389 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:33", "seq": 33, "metric": "rtt", "value": 75.1, "timestamp": 1790749326.0909414} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.392 padding_added=389 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:34", "seq": 34, "metric": "rtt", "value": 76.1, "timestamp": 1790749327.0909574} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.344 padding_added=389 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:35", "seq": 35, "metric": "rtt", "value": 77.1, "timestamp": 1790749328.0909495} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.357 padding_added=389 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:36", "seq": 36, "metric": "rtt", "value": 78.1, "timestamp": 1790749329.0909488} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.491 padding_added=389 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:37", "seq": 37, "metric": "rtt", "value": 79.1, "timestamp": 1790749330.0909402} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.369 padding_added=389 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:38", "seq": 38, "metric": "rtt", "value": 80.1, "timestamp": 1790749331.0909815} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.425 padding_added=389 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:39", "seq": 39, "metric": "rtt", "value": 81.1, "timestamp": 1790749332.0909193} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.377 padding_added=389 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:40", "seq": 40, "metric": "rtt", "value": 82.1, "timestamp": 1790749333.0909522} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.335 padding_added=389 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:41", "seq": 41, "metric": "rtt", "value": 83.1, "timestamp": 1790749334.0909421} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.329 padding_added=389 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:42", "seq": 42, "metric": "rtt", "value": 84.1, "timestamp": 1790749335.0909479} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.359 padding_added=389 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:43", "seq": 43, "metric": "rtt", "value": 85.1, "timestamp": 1790749336.0909307} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.362 padding_added=389 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:44", "seq": 44, "metric": "rtt", "value": 86.1, "timestamp": 1790749337.0909388} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.359 padding_added=389 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:45", "seq": 45, "metric": "rtt", "value": 87.1, "timestamp": 1790749338.0909042} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.362 padding_added=389 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:46", "seq": 46, "metric": "rtt", "value": 88.1, "timestamp": 1790749339.091066} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.775 padding_added=390 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:47", "seq": 47, "metric": "rtt", "value": 89.1, "timestamp": 1790749340.090952} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.412 padding_added=390 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:48", "seq": 48, "metric": "rtt", "value": 90.1, "timestamp": 1790749341.0909421} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.361 padding_added=389 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:49", "seq": 49, "metric": "rtt", "value": 91.1, "timestamp": 1790749342.0909574} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.366 padding_added=389 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:50", "seq": 50, "metric": "rtt", "value": 92.1, "timestamp": 1790749343.0909555} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.391 padding_added=389 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:51", "seq": 51, "metric": "rtt", "value": 93.1, "timestamp": 1790749344.090945} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.350 padding_added=390 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:52", "seq": 52, "metric": "rtt", "value": 94.1, "timestamp": 1790749345.0909185} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.467 padding_added=389 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:53", "seq": 53, "metric": "rtt", "value": 95.1, "timestamp": 1790749346.0909421} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.380 padding_added=389 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:54", "seq": 54, "metric": "rtt", "value": 96.1, "timestamp": 1790749347.0909734} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.351 padding_added=389 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:55", "seq": 55, "metric": "rtt", "value": 97.1, "timestamp": 1790749348.0909212} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.380 padding_added=389 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:56", "seq": 56, "metric": "rtt", "value": 98.1, "timestamp": 1790749349.090959} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.504 padding_added=390 epoch_state=59691644
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:57", "seq": 57, "metric": "rtt", "value": 99.1, "timestamp": 1790749350.0909426} mqtt_messages=2 success=2/2 avg_publish_complete_ms=0.339 padding_added=778 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:58", "seq": 58, "metric": "rtt", "value": 100.1, "timestamp": 1790749351.0909486} mqtt_messages=2 success=2/2 avg_publish_complete_ms=0.307 padding_added=776 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:59", "seq": 59, "metric": "rtt", "value": 101.1, "timestamp": 1790749352.090902} mqtt_messages=2 success=2/2 avg_publish_complete_ms=0.295 padding_added=778 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:60", "seq": 60, "metric": "rtt", "value": 102.1, "timestamp": 1790749353.0909467} mqtt_messages=2 success=2/2 avg_publish_complete_ms=0.376 padding_added=776 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:61", "seq": 61, "metric": "rtt", "value": 103.1, "timestamp": 1790749354.0909421} mqtt_messages=2 success=2/2 avg_publish_complete_ms=0.307 padding_added=776 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:62", "seq": 62, "metric": "rtt", "value": 104.1, "timestamp": 1790749355.0909553} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.388 padding_added=388 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:63", "seq": 63, "metric": "rtt", "value": 105.1, "timestamp": 1790749356.0909543} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.386 padding_added=388 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:64", "seq": 64, "metric": "rtt", "value": 106.1, "timestamp": 1790749357.0909352} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.355 padding_added=388 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:65", "seq": 65, "metric": "rtt", "value": 107.1, "timestamp": 1790749358.0909526} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.384 padding_added=388 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:66", "seq": 66, "metric": "rtt", "value": 108.1, "timestamp": 1790749359.091015} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.550 padding_added=389 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:67", "seq": 67, "metric": "rtt", "value": 109.1, "timestamp": 1790749360.0909307} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.398 padding_added=388 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:68", "seq": 68, "metric": "rtt", "value": 110.1, "timestamp": 1790749361.090937} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.405 padding_added=389 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:69", "seq": 69, "metric": "rtt", "value": 111.1, "timestamp": 1790749362.0909333} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.373 padding_added=388 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:70", "seq": 70, "metric": "rtt", "value": 112.1, "timestamp": 1790749363.0909467} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.413 padding_added=388 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:71", "seq": 71, "metric": "rtt", "value": 113.1, "timestamp": 1790749364.0909126} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.471 padding_added=388 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:72", "seq": 72, "metric": "rtt", "value": 114.1, "timestamp": 1790749365.0909402} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.396 padding_added=388 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:73", "seq": 73, "metric": "rtt", "value": 115.1, "timestamp": 1790749366.0909448} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.375 padding_added=388 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:74", "seq": 74, "metric": "rtt", "value": 116.1, "timestamp": 1790749367.0909548} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.423 padding_added=388 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:75", "seq": 75, "metric": "rtt", "value": 117.1, "timestamp": 1790749368.090933} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.341 padding_added=389 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:76", "seq": 76, "metric": "rtt", "value": 118.1, "timestamp": 1790749369.0909798} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.581 padding_added=388 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:77", "seq": 77, "metric": "rtt", "value": 119.1, "timestamp": 1790749370.0909555} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.495 padding_added=388 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:78", "seq": 78, "metric": "rtt", "value": 120.1, "timestamp": 1790749371.0909703} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.414 padding_added=388 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:79", "seq": 79, "metric": "rtt", "value": 121.1, "timestamp": 1790749372.0909011} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.525 padding_added=388 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:80", "seq": 80, "metric": "rtt", "value": 122.1, "timestamp": 1790749373.090953} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.371 padding_added=389 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:81", "seq": 81, "metric": "rtt", "value": 123.1, "timestamp": 1790749374.0909283} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.367 padding_added=388 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:82", "seq": 82, "metric": "rtt", "value": 124.1, "timestamp": 1790749375.0909936} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.388 padding_added=388 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:83", "seq": 83, "metric": "rtt", "value": 125.1, "timestamp": 1790749376.090984} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.333 padding_added=389 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:84", "seq": 84, "metric": "rtt", "value": 126.1, "timestamp": 1790749377.0909412} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.373 padding_added=388 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:85", "seq": 85, "metric": "rtt", "value": 127.1, "timestamp": 1790749378.0909414} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.369 padding_added=388 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:86", "seq": 86, "metric": "rtt", "value": 128.1, "timestamp": 1790749379.0909905} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.511 padding_added=388 epoch_state=59691645
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:87", "seq": 87, "metric": "rtt", "value": 129.1, "timestamp": 1790749380.0909064} mqtt_messages=2 success=2/2 avg_publish_complete_ms=0.359 padding_added=776 epoch_state=59691646
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:88", "seq": 88, "metric": "rtt", "value": 130.1, "timestamp": 1790749381.090942} mqtt_messages=2 success=2/2 avg_publish_complete_ms=0.310 padding_added=778 epoch_state=59691646
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:89", "seq": 89, "metric": "rtt", "value": 131.1, "timestamp": 1790749382.0910022} mqtt_messages=2 success=2/2 avg_publish_complete_ms=0.303 padding_added=776 epoch_state=59691646
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:90", "seq": 90, "metric": "rtt", "value": 132.1, "timestamp": 1790749383.090981} mqtt_messages=2 success=2/2 avg_publish_complete_ms=0.334 padding_added=778 epoch_state=59691646
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:91", "seq": 91, "metric": "rtt", "value": 133.1, "timestamp": 1790749384.0909781} mqtt_messages=2 success=2/2 avg_publish_complete_ms=0.314 padding_added=776 epoch_state=59691646
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:92", "seq": 92, "metric": "rtt", "value": 134.1, "timestamp": 1790749385.0909507} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.442 padding_added=388 epoch_state=59691646
+published {"message_id": "e5-pub-T062130Z:e5-20260930T062130Z:93", "seq": 93, "metric": "rtt", "value": 135.1, "timestamp": 1790749386.090903} mqtt_messages=1 success=1/1 avg_publish_complete_ms=0.342 padding_added=389 epoch_state=59691646
+publish summary:
+  total MQTT messages: 111
+  success:             111
+  failed:              0
+  success_rate:        1.000
+  avg_complete_ms:     0.375
+  p95_complete_ms:     0.511
+  reconnect_count:     0
+  pacing_mode:         fixed-rate
+  pacing_deadline_miss:0
+  pacing_late_max_ms:  0.000
+Traceback (most recent call last):
+  File "/home/ogawa/aomqtt-paper-artifact/software/aomqtt-v1.3.7/examples/publisher_example.py", line 275, in <module>
+    main()
+  File "/home/ogawa/aomqtt-paper-artifact/software/aomqtt-v1.3.7/examples/publisher_example.py", line 206, in main
+    time.sleep(remaining)
+KeyboardInterrupt

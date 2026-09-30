@@ -1,0 +1,31 @@
+case,description,trial,expected_outcome,observed_outcome,expected_reason_code,reason_code,status,lkg_before,lkg_after,lkg_retained,sequence_before,sequence_after,config_policy_before,config_policy_after,padding_before,padding_after,config_retained,elapsed_us,events,pass
+PG0,valid signed policy,1,accepted,accepted,accepted,accepted,applied,pg-baseline-r01,pg0-candidate-r01,False,1,2,pg-baseline-r01,pg0-candidate-r01,512,1024,False,626.374,scheduled|applied,True
+PG0,valid signed policy,2,accepted,accepted,accepted,accepted,applied,pg-baseline-r02,pg0-candidate-r02,False,1,2,pg-baseline-r02,pg0-candidate-r02,512,1024,False,550.932,scheduled|applied,True
+PG0,valid signed policy,3,accepted,accepted,accepted,accepted,applied,pg-baseline-r03,pg0-candidate-r03,False,1,2,pg-baseline-r03,pg0-candidate-r03,512,1024,False,537.137,scheduled|applied,True
+PG0,valid signed policy,4,accepted,accepted,accepted,accepted,applied,pg-baseline-r04,pg0-candidate-r04,False,1,2,pg-baseline-r04,pg0-candidate-r04,512,1024,False,514.132,scheduled|applied,True
+PG0,valid signed policy,5,accepted,accepted,accepted,accepted,applied,pg-baseline-r05,pg0-candidate-r05,False,1,2,pg-baseline-r05,pg0-candidate-r05,512,1024,False,550.645,scheduled|applied,True
+PG1,tampered after signing,1,rejected,rejected,invalid_signature,invalid_signature,,pg-baseline-r01,pg-baseline-r01,True,1,1,pg-baseline-r01,pg-baseline-r01,512,512,True,402.249,,True
+PG1,tampered after signing,2,rejected,rejected,invalid_signature,invalid_signature,,pg-baseline-r02,pg-baseline-r02,True,1,1,pg-baseline-r02,pg-baseline-r02,512,512,True,372.018,,True
+PG1,tampered after signing,3,rejected,rejected,invalid_signature,invalid_signature,,pg-baseline-r03,pg-baseline-r03,True,1,1,pg-baseline-r03,pg-baseline-r03,512,512,True,340.123,,True
+PG1,tampered after signing,4,rejected,rejected,invalid_signature,invalid_signature,,pg-baseline-r04,pg-baseline-r04,True,1,1,pg-baseline-r04,pg-baseline-r04,512,512,True,346.729,,True
+PG1,tampered after signing,5,rejected,rejected,invalid_signature,invalid_signature,,pg-baseline-r05,pg-baseline-r05,True,1,1,pg-baseline-r05,pg-baseline-r05,512,512,True,325.82,,True
+PG2,expired signed policy,1,rejected,rejected,expired_policy,expired_policy,,pg-baseline-r01,pg-baseline-r01,True,1,1,pg-baseline-r01,pg-baseline-r01,512,512,True,369.121,,True
+PG2,expired signed policy,2,rejected,rejected,expired_policy,expired_policy,,pg-baseline-r02,pg-baseline-r02,True,1,1,pg-baseline-r02,pg-baseline-r02,512,512,True,340.738,,True
+PG2,expired signed policy,3,rejected,rejected,expired_policy,expired_policy,,pg-baseline-r03,pg-baseline-r03,True,1,1,pg-baseline-r03,pg-baseline-r03,512,512,True,339.355,,True
+PG2,expired signed policy,4,rejected,rejected,expired_policy,expired_policy,,pg-baseline-r04,pg-baseline-r04,True,1,1,pg-baseline-r04,pg-baseline-r04,512,512,True,373.385,,True
+PG2,expired signed policy,5,rejected,rejected,expired_policy,expired_policy,,pg-baseline-r05,pg-baseline-r05,True,1,1,pg-baseline-r05,pg-baseline-r05,512,512,True,339.172,,True
+PG3,replayed sequence number,1,rejected,rejected,stale_sequence_no,stale_sequence_no,,pg-baseline-r01,pg-baseline-r01,True,1,1,pg-baseline-r01,pg-baseline-r01,512,512,True,362.175,,True
+PG3,replayed sequence number,2,rejected,rejected,stale_sequence_no,stale_sequence_no,,pg-baseline-r02,pg-baseline-r02,True,1,1,pg-baseline-r02,pg-baseline-r02,512,512,True,341.821,,True
+PG3,replayed sequence number,3,rejected,rejected,stale_sequence_no,stale_sequence_no,,pg-baseline-r03,pg-baseline-r03,True,1,1,pg-baseline-r03,pg-baseline-r03,512,512,True,386.956,,True
+PG3,replayed sequence number,4,rejected,rejected,stale_sequence_no,stale_sequence_no,,pg-baseline-r04,pg-baseline-r04,True,1,1,pg-baseline-r04,pg-baseline-r04,512,512,True,352.517,,True
+PG3,replayed sequence number,5,rejected,rejected,stale_sequence_no,stale_sequence_no,,pg-baseline-r05,pg-baseline-r05,True,1,1,pg-baseline-r05,pg-baseline-r05,512,512,True,489.765,,True
+PG4,untrusted signing key identifier,1,rejected,rejected,unknown_key_id,unknown_key_id,,pg-baseline-r01,pg-baseline-r01,True,1,1,pg-baseline-r01,pg-baseline-r01,512,512,True,115.185,,True
+PG4,untrusted signing key identifier,2,rejected,rejected,unknown_key_id,unknown_key_id,,pg-baseline-r02,pg-baseline-r02,True,1,1,pg-baseline-r02,pg-baseline-r02,512,512,True,111.17,,True
+PG4,untrusted signing key identifier,3,rejected,rejected,unknown_key_id,unknown_key_id,,pg-baseline-r03,pg-baseline-r03,True,1,1,pg-baseline-r03,pg-baseline-r03,512,512,True,120.259,,True
+PG4,untrusted signing key identifier,4,rejected,rejected,unknown_key_id,unknown_key_id,,pg-baseline-r04,pg-baseline-r04,True,1,1,pg-baseline-r04,pg-baseline-r04,512,512,True,143.813,,True
+PG4,untrusted signing key identifier,5,rejected,rejected,unknown_key_id,unknown_key_id,,pg-baseline-r05,pg-baseline-r05,True,1,1,pg-baseline-r05,pg-baseline-r05,512,512,True,112.543,,True
+PG5,signed policy disables payload encryption,1,rejected,rejected,payload_encryption_disable_forbidden,payload_encryption_disable_forbidden,,pg-baseline-r01,pg-baseline-r01,True,1,1,pg-baseline-r01,pg-baseline-r01,512,512,True,298.753,rejected,True
+PG5,signed policy disables payload encryption,2,rejected,rejected,payload_encryption_disable_forbidden,payload_encryption_disable_forbidden,,pg-baseline-r02,pg-baseline-r02,True,1,1,pg-baseline-r02,pg-baseline-r02,512,512,True,324.567,rejected,True
+PG5,signed policy disables payload encryption,3,rejected,rejected,payload_encryption_disable_forbidden,payload_encryption_disable_forbidden,,pg-baseline-r03,pg-baseline-r03,True,1,1,pg-baseline-r03,pg-baseline-r03,512,512,True,308.654,rejected,True
+PG5,signed policy disables payload encryption,4,rejected,rejected,payload_encryption_disable_forbidden,payload_encryption_disable_forbidden,,pg-baseline-r04,pg-baseline-r04,True,1,1,pg-baseline-r04,pg-baseline-r04,512,512,True,295.55,rejected,True
+PG5,signed policy disables payload encryption,5,rejected,rejected,payload_encryption_disable_forbidden,payload_encryption_disable_forbidden,,pg-baseline-r05,pg-baseline-r05,True,1,1,pg-baseline-r05,pg-baseline-r05,512,512,True,327.006,rejected,True

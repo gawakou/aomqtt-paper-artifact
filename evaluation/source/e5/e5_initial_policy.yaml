@@ -1,0 +1,13 @@
+id: e5_overlap5_fixed512
+name: e5_overlap5_fixed512
+token_mode: whole
+qos: 1
+retain: false
+rotation:
+  enabled: true
+  interval_sec: 30
+  overlap_sec: 5
+padding:
+  enabled: true
+  mode: fixed
+  fixed_size: 512

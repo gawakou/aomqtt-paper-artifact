@@ -1,0 +1,7 @@
+case,description,expected_outcome,expected_reason_code,trials,passes,accepted,rejected,lkg_retained_on_rejection,config_retained_on_rejection,elapsed_us_mean,elapsed_us_sd,elapsed_us_min,elapsed_us_max
+PG0,valid signed policy,accepted,accepted,5,5,5,0,,,555.844,42.177,514.132,626.374
+PG1,tampered after signing,rejected,invalid_signature,5,5,0,5,5,5,357.388,30.145,325.82,402.249
+PG2,expired signed policy,rejected,expired_policy,5,5,0,5,5,5,352.354,17.328,339.172,373.385
+PG3,replayed sequence number,rejected,stale_sequence_no,5,5,0,5,5,5,386.647,60.014,341.821,489.765
+PG4,untrusted signing key identifier,rejected,unknown_key_id,5,5,0,5,5,5,120.594,13.436,111.17,143.813
+PG5,signed policy disables payload encryption,rejected,payload_encryption_disable_forbidden,5,5,0,5,5,5,310.906,14.443,295.55,327.006

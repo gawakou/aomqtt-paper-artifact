@@ -1,0 +1,79 @@
+AOMQTT policy control message
+  target topic:  aomqtt/control/e5-T062834Z/policy
+  group_id:      e5-T062834Z
+  policy_id:     e5_overlap5_fixed512_auto_s2
+  policy_name:   e5_overlap5_fixed512_auto_s2
+  issued_at:     1790749807.623
+  valid_from:    1790749809.623
+  valid_after:   1.999s
+  grace_period:  5.000s
+  sequence_no:   2
+  expires_at:    1790753407.6231387
+  signed:        yes
+{
+  "expires_at": 1790753407.6231387,
+  "grace_period_sec": 5.0,
+  "group_id": "e5-T062834Z",
+  "issued_at": 1790749807.6231387,
+  "policy": {
+    "id": "e5_overlap5_fixed512_auto_s2",
+    "name": "e5_overlap5_fixed512_auto_s2",
+    "padding": {
+      "bucket_size": null,
+      "enabled": true,
+      "fixed_size": 512,
+      "mode": "fixed",
+      "random_max_bytes": null,
+      "random_min_bytes": null
+    },
+    "qos": 1,
+    "retain": false,
+    "rotation": {
+      "enabled": true,
+      "interval_sec": 30,
+      "overlap_sec": 0
+    },
+    "token_mode": "whole"
+  },
+  "schema_version": "aomqtt-policy-v1",
+  "sequence_no": 2,
+  "signature": {
+    "algorithm": "Ed25519",
+    "key_id": "policy-signing-key-1",
+    "value": "PjWed5Xtw4/gCRtq8DWp4Mm43f63RYKhmC313Kr2GyvzI/5IRSYIMdcu1gC/X0CI33GwFuwZyPqgCwG3r4BmBg=="
+  },
+  "valid_from": 1790749809.6231387
+}
+published control policy: rc=0 mid=1
+{
+  "metrics": {
+    "avg_publish_complete_ms": 0.42681454215198755,
+    "avg_delivery_latency_ms": 0.6644141440298043,
+    "loss_rate": 0.0,
+    "duplicate_rate": 0.11764705882352941,
+    "decrypt_success_rate": 1.0,
+    "avg_payload_total_overhead_bytes": 679.1619047619048,
+    "reconnect_count": 0,
+    "publisher_rows": 105,
+    "subscriber_rows": 102
+  },
+  "decision": {
+    "action": "decrease_overlap",
+    "reason": "duplicate_rate is above threshold: 0.11764705882352941 > 0.1",
+    "changes": {
+      "rotation.overlap_sec": "-5"
+    }
+  },
+  "generated_policy_id": "e5_overlap5_fixed512_auto_s2",
+  "output_policy_path": "/home/ogawa/aomqtt-paper-artifact/results/e5/e5-20260930T062834Z/generated_policy.yaml",
+  "tracker_summary": "Policy deployment status\npolicy_id: e5_overlap5_fixed512_auto_s2\nsequence_no: 2\n\nclient_id            role         ACK        STATUS     reason_code        reason\n------------------------------------------------------------------------------------------------\ne5-pub-T062834Z      publisher    accepted   applied    -                  -\ne5-sub-T062834Z      subscriber   accepted   applied    -                  -"
+}
+
+Policy deployment status
+policy_id: e5_overlap5_fixed512_auto_s2
+sequence_no: 2
+
+client_id            role         ACK        STATUS     reason_code        reason
+------------------------------------------------------------------------------------------------
+e5-pub-T062834Z      publisher    accepted   applied    -                  -
+e5-sub-T062834Z      subscriber   accepted   applied    -                  -

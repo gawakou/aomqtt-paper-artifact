@@ -1,0 +1,51 @@
+{
+  "schema": "aomqtt-closed-loop-observation-adapter-v3",
+  "label": "pre-control",
+  "purpose": "Evaluation-only adapter for the unmodified AOMQTT v1.3.7 AutoPolicyController metric input. Delivery loss is referenced only to successfully published logical messages.",
+  "inputs": {
+    "publisher_raw": {
+      "path": "/home/ogawa/aomqtt-paper-artifact/results/e5/e5-20260930T072057Z/pre/publisher_raw_snapshot.csv",
+      "sha256": "a97972e30f6b7ad2b9284b9a993016786455a23f69d3e082b9902d1359018bef"
+    },
+    "subscriber_raw": {
+      "path": "/home/ogawa/aomqtt-paper-artifact/results/e5/e5-20260930T072057Z/pre/subscriber_raw_snapshot.csv",
+      "sha256": "96602e1a8018fe0736deccb682567c85fd3c8f17fc9dc944f81306af6e4e5ece"
+    }
+  },
+  "outputs": {
+    "publisher_controller_input": {
+      "path": "/home/ogawa/aomqtt-paper-artifact/results/e5/e5-20260930T072057Z/pre/controller-input/publisher_controller_input.csv",
+      "sha256": "a97972e30f6b7ad2b9284b9a993016786455a23f69d3e082b9902d1359018bef"
+    },
+    "subscriber_controller_input": {
+      "path": "/home/ogawa/aomqtt-paper-artifact/results/e5/e5-20260930T072057Z/pre/controller-input/subscriber_controller_input.csv",
+      "sha256": "e1f43e85b41357ecf1efeb43bf64aa17aa370ca150a11fad1ea077ad22f02101"
+    }
+  },
+  "independent_metrics": {
+    "publisher": {
+      "raw_rows": 105,
+      "all_logical_messages": 90,
+      "successfully_published_logical_messages": 90,
+      "failed_logical_messages": 0,
+      "failed_logical_ids": [],
+      "avg_publish_complete_ms": 0.3860686545348948,
+      "avg_payload_total_overhead_bytes": 679.2,
+      "reconnect_count": 0,
+      "reconnect_counter_semantics": "raw PublishMetric.reconnect_count is cumulative; controller-input CSV stores per-row increments so the unmodified v1.3.7 aggregator sum equals the actual reconnect count"
+    },
+    "subscriber": {
+      "raw_rows": 102,
+      "seq_source": "logical_seq",
+      "unique_received_logical_messages": 90,
+      "duplicate_extra_rows": 12,
+      "duplicate_rate": 0.11764705882352941,
+      "successful_publisher_logical_messages": 90,
+      "lost_successfully_published_messages": 0,
+      "loss_rate": 0.0,
+      "lost_ids": [],
+      "decrypt_success_rate": 1.0,
+      "avg_delivery_latency_ms": 0.6310402178296856
+    }
+  }
+}

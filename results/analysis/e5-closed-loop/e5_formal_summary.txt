@@ -1,0 +1,22 @@
+AOMQTT E5 formal closed-loop summary
+====================================
+successful formal runs: 5 / expected 5
+formal set complete: True
+formal run IDs: ['e5-20260930T070708Z', 'e5-20260930T071422Z', 'e5-20260930T071740Z', 'e5-20260930T072057Z', 'e5-20260930T072414Z']
+nonformal/failed run IDs: ['e5-20260930T062834Z']
+
+duplicate rate / received row:
+  pre mean ± SD:  12.773% ± 1.381%
+  post mean ± SD: 7.386% ± 1.556%
+  absolute drop:   5.387% ± 0.175%
+  relative reduction: 42.670% ± 5.757%
+
+physical MQTT rows / successful logical message:
+  pre mean ± SD:  1.166667 ± 0.000000
+  post mean ± SD: 1.100000 ± 0.000000
+
+loss:
+  pre mean:  0.000%
+  post mean: 0.000%
+
+E5-FORMAL-SET=PASS
