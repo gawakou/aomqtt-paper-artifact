@@ -1,0 +1,13 @@
+AOMQTT E3 privacy analysis
+==========================
+
+E3-A payload-length inference (chance = 12.5%)
+  A0: accuracy=0.6925 (SD=0.0066), macro-F1=0.6914 (SD=0.0071)
+  A1: accuracy=0.6921 (SD=0.0062), macro-F1=0.6906 (SD=0.0070)
+  A2: accuracy=0.1250 (SD=0.0000), macro-F1=0.0278 (SD=0.0000)
+
+E3-B cross-epoch linkability (chance = 12.5%)
+  B0: persistent-token reference; classifier not trained; stable=True
+  B1: Top-1=0.9773 (SD=0.0227), MRR=0.9727 (SD=0.0147)
+  B2: Top-1=0.3455 (SD=0.0422), MRR=0.5712 (SD=0.0233)
+  B3: Top-1=0.9955 (SD=0.0102), MRR=0.9919 (SD=0.0056)

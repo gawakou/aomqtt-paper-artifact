@@ -1,0 +1,22 @@
+AOMQTT E3 privacy analysis freeze
+Created: 2026-09-29T23:20:18+00:00
+
+Analysis harness commit:
+c4123a92cce8d43f70a1f955d6db9303ae853671
+
+Analysis script:
+0de1a0f8ec6132a7963b6a50b3b67882f94fb0729c588d3b613743a3ad3c9023  experiments/e3/analyze_e3_privacy.py
+
+Dependencies:
+python 3.12.3
+numpy 2.5.3
+scipy 1.18.1
+scikit-learn 1.9.1
+
+Analysis artifacts:
+6587d5bb96dd502d07f730813b0011b7c3a5b40c1b7fa859e8fef08f5e9e0a55  results/e3/privacy-analysis/analysis_manifest.json
+670ab27d54e6fd003d8ddb1b5d9aaf99678def90db866a32ff5a8b503b8851c7  results/e3/privacy-analysis/e3a_loro_folds.csv
+ca19806abd4c988b5d7b842409b05bbbe221128aec5ee4ab72fea8ebe709e0a7  results/e3/privacy-analysis/e3b_pair_scores.csv
+d17f470077bf1c57899c9e9126f61e22b1dc72c7560ac356131975573c950caa  results/e3/privacy-analysis/e3b_transition_assignments.csv
+7efa49684d9cbf64074c633626d716856ba354837b7cb12bcab6b0bdbac6df9f  results/e3/privacy-analysis/privacy_analysis.json
+eca8a4c54c136282984499fcf14a128af1595c4e3b1c6a1596056edf0547f763  results/e3/privacy-analysis/privacy_analysis_summary.txt

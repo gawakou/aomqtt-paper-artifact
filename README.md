@@ -28,10 +28,13 @@ https://github.com/gawakou/aomqtt-client-sdk
 - `software/`: evaluated software revision information and the frozen AOMQTT v1.3.7 source snapshot
 - `evaluation/source/e1/`: E1 replication runner, baseline helpers, and analyzer
 - `evaluation/source/e2/`: frozen E2 analysis programs
+- `evaluation/source/e3/`: frozen E3 event-plan, observer, runner, analysis, and test programs
 - `results/e1/`: one-publisher / one-subscriber E1 replication archive
 - `results/e1/summary/`: directly viewable E1 per-run and per-condition summary tables
 - `results/e2/full/`: ten accepted Full AOMQTT E2 run archives
 - `results/e2/plain/`: ten accepted Plain MQTT E2 run archives
+- `results/e3/`: frozen E3 formal-data archive and integrity sidecar
+- `results/analysis/e3-privacy/`: directly inspectable E3 privacy-analysis outputs
 - `results/analysis/e2-full/`: frozen Full AOMQTT aggregate analysis
 - `results/analysis/e2-plain/`: frozen Plain MQTT aggregate analysis
 - `provenance/`: software and experimental provenance
@@ -57,6 +60,19 @@ E2 uses five publishers and five subscribers and compares:
 
 There are ten accepted runs per condition.
 
+## E3 broker-visible privacy evaluation
+
+E3 uses five accepted formal runs per condition.
+
+- E3-A: payload-length inference under Plain MQTT, encrypted/unpadded AOMQTT,
+  and fixed 512-byte padding.
+- E3-B: cross-epoch topic-token linkability under rotation without padding,
+  rotation with fixed padding, and fixed padding with a 5-s overlap.
+- The final analysis uses five-fold Leave-One-Run-Out validation and preserves
+  the frozen harness and analysis provenance.
+
+See `provenance/e3-provenance.md` and `results/analysis/e3-privacy/`.
+
 ## Artifact integrity
 
 Verify repository files with:
@@ -65,7 +81,7 @@ Verify repository files with:
 sha256sum -c checksums/SHA256SUMS.txt
 ```
 
-Individual E1/E2 archive checksum sidecars are also retained beside the
+Individual E1/E2/E3 archive checksum sidecars are also retained beside the
 corresponding archives.
 
 ## Sanitization
